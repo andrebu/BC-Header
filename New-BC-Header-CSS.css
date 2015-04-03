@@ -1,0 +1,150 @@
+.green {
+	color: #39b54a;
+}
+.header {
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1),0 4px 8px 0 rgba(0,0,0,0.2);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+}
+.header .TopMenu {
+	background-color: #fff;
+	border-top: 0; 
+	border-bottom: 3px solid #eeeeee;
+	color: #666;
+}
+.header .TopMenu .inner {
+	padding: 8px 0;
+}
+.header .TopMenu .inner #loginContainer {
+	float: left;
+}
+.header .TopMenu .inner #loginContainer .loginGreeting a {
+	color: #39B54A;
+}
+
+
+
+.header #Header {
+	margin: 10px 0;
+}
+.header #Header .header-logo a img {
+	width: 50px;
+	height: 50px;
+}
+.header #Header .header-logo-text {
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0 0 0 4px;
+	font-family: Geneva;
+}
+.header #Header .headerSearchContainer {
+	
+}
+.header #Header .headerSearchContainer #SearchForm {
+	float: left;
+	display: block;
+/* 	width: 40%; */
+	margin: 3px auto;
+	border: 2px solid #39B54A;
+	border-radius: 3px;
+	min-height: 40px;
+	margin-left: 130px;
+}
+.header #Header .headerSearchContainer #SearchForm form {
+	
+}
+.header #Header .headerSearchContainer #SearchForm input.Textbox#search_query {
+	float: none;
+	height: auto;
+	line-height: 3;
+	line-height: 38px;
+	font-size: 17px;
+	width: 420px;
+}
+.header #Header .headerSearchContainer #SearchForm .Button {
+	float: right;
+	height: 40px;
+	color: #fff;
+	background-color: #39B54A;
+	width: 40px;
+}
+.header #Header .headerSearchContainer #SearchForm .Button:hover {
+	background-color: #666;
+}
+.header #Header .inner .header-secondary {
+	top: 0;
+}
+
+.header #subHeader {
+	background-color: #666;
+}
+.header #subHeader .inner {
+	margin: 0 auto;
+	width: 90%;	
+	max-width: 1200px;
+}
+.header #subHeader .PageMenu a {
+	color: #fff;
+}
+#newTopMenu {
+	color: #777;
+}
+
+.main {
+	margin-top: 145px;
+}
+
+@media screen and (max-width: 480px) {
+	.header #Header {
+		margin: 0;
+	}
+	.header #Header .headerSearchContainer {
+		display: none;
+	}
+	.header #Header .inner .header-secondary {
+		top: 12px;
+	}
+	#subHeader {
+		display:none;
+	}
+	.header-logo-mobile {
+		display: none !important;
+	}
+}
+@media screen and (max-width: 767px) {
+	.header #Header {
+		margin: 0;
+	}
+	.header #Header .headerSearchContainer {
+		display: none;
+	}
+	.header #Header .inner .header-secondary {
+		top: 12px;
+	}
+	#subHeader {
+		display:none;
+	}
+	.header-logo-mobile {
+		display: none !important;
+	}
+}
+@media screen and (max-width: 768px) {
+	.header #Header {
+		margin: 0;
+	}
+	.header #Header .headerSearchContainer {
+		display: none;
+	}
+	.header #Header .inner .header-secondary {
+		top: 12px;
+	}
+	#subHeader {
+		display:none;
+	}
+	.header-logo-mobile {
+		display: none !important;
+	}
+}
