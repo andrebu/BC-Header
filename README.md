@@ -43,6 +43,7 @@ To get this to work, you just need to require the module once per run-time, like
 
 1. Make Welcome greeting line function with dynamic name.  "Hello, [name]!" when logged in and "Welcome!" when not.
 2. Create new nav links in sub-header
+3. Add "search by category" to the search function.
 
 
 ------------------------------------------------------------------------------------
