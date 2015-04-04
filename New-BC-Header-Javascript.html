@@ -10,6 +10,10 @@
 			        var html = $(result);
 					var accountFirstName = html.find('input[name="account_firstname"]').attr('value');
 					console.log(accountFirstName);
+					function addAccountName() {
+						$('#welcomeHelloLogin').html('Hello, ' + '<span id="accountFirstName">' + accountFirstName + '</span>');
+					}
+					addAccountName();
 			    },
 			});
 		}
