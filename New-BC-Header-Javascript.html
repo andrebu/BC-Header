@@ -1,8 +1,20 @@
 <script language="javascript" type="text/javascript">
-	$(document).ready( function headerFunctions() {
+	function headerFunctions () {
 		if ($('#loginGreeting a').text('Sign Out')) {
 			console.log('we\'re logged in!');
+			$.ajax({
+			    url: "/account.php?action=account_details",
+			    type: 'GET',
+			    dataType: 'html',
+			    success: function(result) {
+			        var html = $(result);
+					var accountFirstName = html.find('input[name="account_firstname"]').attr('value');
+					console.log(accountFirstName);
+			    },
+			});
 		}
+	};
+	$(document).ready( function() {
+		headerFunctions();
 	});
-	headerFunctions();
 </script>
