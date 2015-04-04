@@ -79,6 +79,17 @@ body#home {
 .header #Header .headerSearchContainer #SearchForm .Button:hover {
 	background-color: #666;
 }
+.header #Header .inner #myAccountTrigger {
+	display: block;
+	font-size: 15px;
+	position: absolute;
+	top: 4px;
+	right: 160px;
+	width: 110px;
+}
+.header #Header .inner #myAccountTrigger > span:first-of-type {
+	font-size: 12px;
+}
 .header #Header .inner .header-secondary {
 	top: 0;
 }
@@ -95,13 +106,14 @@ body#home {
 }
 .header #subHeader .inner {
 	color: #fff;
+	display: table;
 }
 .header #subHeader .inner .shopByContainer {
 /* 	float: left; */
 	display: table-cell;
 	vertical-align: middle;
 	height: 40px;
-	padding: 0 170px 0 40px;
+	padding: 0 103px 0 40px;
 }
 .header #subHeader .inner .shopByContainer .shopByText {
 	color: #D3CCCC;
@@ -128,6 +140,9 @@ body#home {
 	display: table-cell;
 	vertical-align: middle;
 	height: 40px;
+}
+.header #subHeader .inner .freeShippingContainer .freeShippingText {
+	float: right;
 }
 
 
@@ -187,3 +202,4 @@ body#home {
 		display: none !important;
 	}
 }
+
