@@ -1,3 +1,6 @@
+body#home {
+	font-family: 'Futura';
+}
 .green {
 	color: #39b54a;
 }
@@ -24,6 +27,9 @@
 .header .TopMenu .inner #loginContainer .loginGreeting a {
 	color: #39B54A;
 }
+.header .TopMenu .inner #newTopMenu {
+	color: #777;
+}
 
 
 
@@ -38,7 +44,6 @@
 	display: table-cell;
 	vertical-align: middle;
 	padding: 0 0 0 4px;
-	font-family: Geneva;
 }
 .header #Header .headerSearchContainer {
 	
@@ -78,6 +83,8 @@
 	top: 0;
 }
 
+
+
 .header #subHeader {
 	background-color: #666;
 }
@@ -86,12 +93,44 @@
 	width: 90%;	
 	max-width: 1200px;
 }
-.header #subHeader .PageMenu a {
+.header #subHeader .inner {
 	color: #fff;
 }
-#newTopMenu {
-	color: #777;
+.header #subHeader .inner .shopByContainer {
+/* 	float: left; */
+	display: table-cell;
+	vertical-align: middle;
+	height: 40px;
+	padding: 0 170px 0 40px;
 }
+.header #subHeader .inner .shopByContainer .shopByText {
+	color: #D3CCCC;
+}
+.header #subHeader .inner .shopByContainer .shopByText:hover {
+	color: #fff;
+}
+.header #subHeader .inner .shopByContainer i {
+	padding: 5px;
+}
+.fa-caret-up:before {
+	content: "\f0d8";
+}
+.fa-caret-down:before {
+	content: "\f0d7";
+}
+.header #subHeader .inner .PageMenu a {
+	color: #fff;
+	font-family: 'Futura';
+	text-transform: none;
+}
+.header #subHeader .inner .freeShippingContainer {
+/* 	float: right; */
+	display: table-cell;
+	vertical-align: middle;
+	height: 40px;
+}
+
+
 
 .main {
 	margin-top: 145px;
