@@ -50,6 +50,8 @@ To get this to work, you just need to require the module once per run-time, like
 
 
 ##Resources
+- [Get the content of another page's div with jQuery Ajax](http://stackoverflow.com/questions/14683736/get-the-content-of-another-pages-div-with-jquery-ajax)
+- [Multiple Attribute Selector [name="value"][name2="value2"]](https://api.jquery.com/multiple-attribute-selector/)
 
 
 
