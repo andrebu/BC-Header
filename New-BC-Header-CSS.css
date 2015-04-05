@@ -1,9 +1,13 @@
+/* Site Wide to go with new header */
 body#home {
 	font-family: 'Futura';
 }
 .green {
 	color: #39b54a;
 }
+
+/* New Header */
+/* Top Header - top section of three section header */
 .header {
 	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1),0 4px 8px 0 rgba(0,0,0,0.2);
 	position: fixed;
@@ -33,6 +37,7 @@ body#home {
 
 
 
+/* Main Header - middle section of three section header */
 .header #Header {
 	margin: 10px 0;
 }
@@ -96,6 +101,7 @@ body#home {
 
 
 
+/* SubHeader Header - bottom section of three section header */
 .header #subHeader {
 	background-color: #666;
 }
@@ -152,15 +158,21 @@ body#home {
 }
 
 @media screen and (max-width: 480px) {
+/* Top Header - top section of three section header */
+/* Main Header - middle section of three section header */
 	.header #Header {
 		margin: 0;
 	}
 	.header #Header .headerSearchContainer {
 		display: none;
 	}
+	.header #Header .inner #myAccountTrigger {
+		display: none;
+	}
 	.header #Header .inner .header-secondary {
 		top: 12px;
 	}
+/* SubHeader Header - bottom section of three section header */
 	#subHeader {
 		display:none;
 	}
@@ -169,15 +181,21 @@ body#home {
 	}
 }
 @media screen and (max-width: 767px) {
+/* Top Header - top section of three section header */
+/* Main Header - middle section of three section header */
 	.header #Header {
 		margin: 0;
 	}
 	.header #Header .headerSearchContainer {
 		display: none;
 	}
+	.header #Header .inner #myAccountTrigger {
+		display: none;
+	}
 	.header #Header .inner .header-secondary {
 		top: 12px;
 	}
+/* SubHeader Header - bottom section of three section header */
 	#subHeader {
 		display:none;
 	}
@@ -186,15 +204,21 @@ body#home {
 	}
 }
 @media screen and (max-width: 768px) {
+/* Top Header - top section of three section header */
+/* Main Header - middle section of three section header */
 	.header #Header {
 		margin: 0;
 	}
 	.header #Header .headerSearchContainer {
 		display: none;
 	}
+	.header #Header .inner #myAccountTrigger {
+		display: none;
+	}
 	.header #Header .inner .header-secondary {
 		top: 12px;
 	}
+/* SubHeader Header - bottom section of three section header */
 	#subHeader {
 		display:none;
 	}
@@ -202,4 +226,3 @@ body#home {
 		display: none !important;
 	}
 }
-
