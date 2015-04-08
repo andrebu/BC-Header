@@ -37,6 +37,7 @@ body#home {
 
 
 
+
 /* Main Header - middle section of three section header */
 .header #Header {
 	margin: 10px 0;
@@ -98,6 +99,8 @@ body#home {
 .header #Header .inner .header-secondary {
 	top: 0;
 }
+
+
 
 
 
@@ -166,9 +169,6 @@ body#home {
 	.header #Header .headerSearchContainer {
 		display: none;
 	}
-	.header #Header .inner #myAccountTrigger {
-		display: none;
-	}
 	.header #Header .inner .header-secondary {
 		top: 12px;
 	}
@@ -189,9 +189,6 @@ body#home {
 	.header #Header .headerSearchContainer {
 		display: none;
 	}
-	.header #Header .inner #myAccountTrigger {
-		display: none;
-	}
 	.header #Header .inner .header-secondary {
 		top: 12px;
 	}
@@ -210,9 +207,6 @@ body#home {
 		margin: 0;
 	}
 	.header #Header .headerSearchContainer {
-		display: none;
-	}
-	.header #Header .inner #myAccountTrigger {
 		display: none;
 	}
 	.header #Header .inner .header-secondary {
