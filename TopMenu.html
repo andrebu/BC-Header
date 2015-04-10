@@ -6,13 +6,7 @@
                 <span id="welcomeHelloLogin">Welcome! </span>(%%GLOBAL_LoginOrLogoutText%%)</span>
         </div>
         %%Panel.SideCurrencySelector%%
-        <ul id="newTopMenu">
-            <li>Why Shop Online?</li> | 
-            <li>Reviews</li> | 
-            <li>FAQ</li> | 
-            <li>Help</li>
-        </ul>
-        <ul style="display:%%GLOBAL_HidePurchasingOptions%%">
+<!--        <ul style="display:%%GLOBAL_HidePurchasingOptions%%">
             <li %%GLOBAL_ShowStorePhoneNumber%% id="StorePhoneNumber">
                 <div class="phoneIcon">Call us at <span>%%GLOBAL_StorePhoneNumber%%</span></div>
             </li>
@@ -25,6 +19,21 @@
             %%SNIPPET_TopMenuGiftCertificates%%
             <li class="last" style="display:%%GLOBAL_HideAccountOptions%%" id="LoginOrLogoutText">
                 <div>%%GLOBAL_LoginOrLogoutText%%</div>
+            </li>
+        </ul> -->
+        <ul id="newTopMenu">
+            <li>Why Shop Online?</li> | 
+            <li>Reviews</li> | 
+            <li>FAQ</li> | 
+            <li id="helpMenuTrigger">Help <i class="fa fa-caret-down"></i>
+                <div id="helpMenu">
+                    <ul>
+                        <li><span>Customer Service</span></li>
+                        <li><i class="fa fa-mobile"></i> 1-844-326-5786</li>
+                        <li><i class="fa fa-envelope green"></i> info@dankstop.com</li>
+                        <li><a href="/contact-us/" class="btn btn-default">Contact Us</a></li>
+                    </ul>
+                </div>
             </li>
         </ul>
     </div>
