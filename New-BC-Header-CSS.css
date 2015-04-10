@@ -5,6 +5,21 @@ body#home {
 .green {
 	color: #39b54a;
 }
+/* caret arrow down up */
+.fa-caret-up:before {
+	content: "\f0d8";
+}
+.fa-caret-down:before {
+	content: "\f0d7";
+}
+/* mobile */
+.fa-mobile-phone:before, .fa-mobile:before {
+  content: "\f10b";
+}
+/* envelope */
+.fa-envelope:before {
+	content: "\f0e0";
+}
 
 /* New Header */
 /* Top Header - top section of three section header */
@@ -23,7 +38,8 @@ body#home {
 	color: #666;
 }
 .header .TopMenu .inner {
-	padding: 8px 0;
+	padding: 0;
+	line-height: 30px;
 }
 .header .TopMenu .inner #loginContainer {
 	float: left;
@@ -34,6 +50,36 @@ body#home {
 .header .TopMenu .inner #newTopMenu {
 	color: #777;
 }
+.header .TopMenu .inner #newTopMenu > li {
+	line-height: 30px;
+}
+.header .TopMenu .inner #newTopMenu #helpMenuTrigger #helpMenu {
+	border: solid 1px #999;
+	background-color: #fff;
+	box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.1);
+	position: absolute;
+	top: 30px;
+	z-index: 105;
+	padding: 4px 4px 13px;
+	right: 107px;
+	display: none;
+}
+.header .TopMenu .inner #newTopMenu #helpMenuTrigger:hover #helpMenu {
+	display: block;
+}
+.header .TopMenu .inner #newTopMenu #helpMenuTrigger #helpMenu li {
+	display: block;
+	text-align: center;
+	padding: 5px 10px;
+}
+.header .TopMenu .inner #newTopMenu #helpMenuTrigger #helpMenu li .customerService {
+	text-transform: uppercase;
+}
+.header .TopMenu .inner #newTopMenu #helpMenuTrigger #helpMenu li .btn {
+	height:auto;
+	padding: 6px;
+}
+
 
 
 
@@ -132,12 +178,6 @@ body#home {
 }
 .header #subHeader .inner .shopByContainer i {
 	padding: 5px;
-}
-.fa-caret-up:before {
-	content: "\f0d8";
-}
-.fa-caret-down:before {
-	content: "\f0d7";
 }
 .header #subHeader .inner .PageMenu a {
 	color: #fff;
