@@ -52,6 +52,9 @@ body#home {
 .header .TopMenu .inner #loginContainer .loginGreeting a {
 	color: #39B54A;
 }
+.header .TopMenu .inner #loginContainer .loginGreeting a:hover {
+	color: #666;
+}
 .header .TopMenu .inner #newTopMenu {
 	color: #777;
 	position: relative;
@@ -76,6 +79,8 @@ body#home {
 	box-shadow: 2px -4px 4px 3px rgba(0,0,0,0.1);
 	z-index: 999;
 	line-height: 28px;
+	color: #39B54A;
+	padding: 0 9px;
 }
 /*
 .header .TopMenu .inner #newTopMenu li#helpMenuTrigger:hover {
