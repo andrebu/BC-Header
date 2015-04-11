@@ -22,19 +22,35 @@
             </li>
         </ul> -->
         <ul id="newTopMenu">
-            <li>Why Shop Online?</li> | 
-            <li>Reviews</li> | 
-            <li>FAQ</li> | 
-            <li id="helpMenuTrigger">Help <i class="fa fa-caret-down"></i>
-                <div id="helpMenu">
-                    <ul>
-                        <li><span class="green customerService">Customer Service</span></li>
-                        <li><i class="fa fa-mobile"></i> 1-844-326-5786</li>
-                        <li><i class="fa fa-envelope green"></i> info@dankstop.com</li>
-                        <li><a href="/contact-us/" class="btn btn-default">Contact Us</a></li>
-                    </ul>
-                </div>
-            </li>
+            <li>Why Shop Online?</li>|<li>Reviews</li>|<li>FAQ</li>|<li id="helpMenuTrigger">Help <i class="fa fa-caret-down"></i></li>
+            <div id="helpMenu">
+                <ul>
+                    <li><span class="green customerService">Customer Service</span></li>
+                    <li><i class="fa fa-mobile"></i> 1-844-326-5786</li>
+                    <li><i class="fa fa-envelope green"></i> info@dankstop.com</li>
+                    <li><a href="/contact-us/" class="btn btn-default">Contact Us</a></li>
+                </ul>
+            </div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        var helpMenuTrigger = $('#helpMenuTrigger');
+        var helpMenuContainer = $('#helpMenu');
+        // use countdown timer plugin to set the "countown to sale's end" clock 
+        function showHelpMenu() {
+            helpMenuTrigger.on({
+                mouseenter: function(event) {
+                   helpMenuContainer.show();
+                },
+                mouseleave: function(event) {
+                   helpMenuContainer.hide();
+                },
+                click: function(event) {
+                }
+            });
+        }
+        showHelpMenu();
+   });
+</script>
         </ul>
     </div>
 </div>​
