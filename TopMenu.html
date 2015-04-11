@@ -21,9 +21,27 @@
                 <div>%%GLOBAL_LoginOrLogoutText%%</div>
             </li>
         </ul> -->
+<script type="text/javascript">
+        var helpMenuTrigger = $('#helpMenuTrigger');
+        var helpMenuContainer = $('#helpMenu');
+            function showMenu(){
+                document.getElementById("helpMenu").style.display = 'block';//display drop down menu
+                helpMenuTrigger.css({
+                    'border-color': '#999',
+                    'border-style': 'solid',
+                    'border-width': '1px 1px 0 1px',
+                    'background-color': '#fff',
+                    'box-shadow': '2px -1px 2px 0 rgba(0,0,0,0.1)',
+                    'z-index': '999',
+                })
+            }
+            function closeMenu(){
+                document.getElementById("helpMenu").style.display = 'none';
+            }
+</script>
         <ul id="newTopMenu">
-            <li>Why Shop Online?</li>|<li>Reviews</li>|<li>FAQ</li>|<li id="helpMenuTrigger">Help <i class="fa fa-caret-down"></i></li>
-            <div id="helpMenu">
+            <li>Why Shop Online?</li>|<li>Reviews</li>|<li>FAQ</li>|<li id="helpMenuTrigger" onMouseOver="showMenu()">Help <i class="fa fa-caret-down"></i></li>
+            <div id="helpMenu" onMouseOut="closeMenu()">
                 <ul>
                     <li><span class="green customerService">Customer Service</span></li>
                     <li><i class="fa fa-mobile"></i> 1-844-326-5786</li>
@@ -37,16 +55,44 @@
         var helpMenuContainer = $('#helpMenu');
         // use countdown timer plugin to set the "countown to sale's end" clock 
         function showHelpMenu() {
+/*
             helpMenuTrigger.on({
                 mouseenter: function(event) {
-                   helpMenuContainer.show();
+                    helpMenuContainer.show();
+                    helpMenuTrigger.css({
+                        'border-color': '#999',
+                        'border-style': 'solid',
+                        'border-width': '1px 1px 0 1px',
+                        'background-color': '#fff',
+                        'box-shadow': '2px -1px 2px 0 rgba(0,0,0,0.1)',
+                        'z-index': '999',
+                    })
                 },
                 mouseleave: function(event) {
-                   helpMenuContainer.hide();
+                    if (!helpMenuContainer) {
+                        helpMenuContainer.hide();
+                    }
                 },
                 click: function(event) {
                 }
             });
+*/
+/*
+            function showMenu(){
+                document.getElementById("helpMenu").style.display = 'block';//display drop down menu
+                helpMenuTrigger.css({
+                    'border-color': '#999',
+                    'border-style': 'solid',
+                    'border-width': '1px 1px 0 1px',
+                    'background-color': '#fff',
+                    'box-shadow': '2px -1px 2px 0 rgba(0,0,0,0.1)',
+                    'z-index': '999',
+                })
+            }
+            function closeMenu(){
+                document.getElementById("helpMenu").style.display = 'none';
+            }
+*/
         }
         showHelpMenu();
    });
