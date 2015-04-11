@@ -61,6 +61,7 @@ body#home {
 	box-sizing: border-box;
 	position: absolute;
 	z-index: 106;
+	cursor: default;
 }
 /*
 .header .TopMenu .inner #newTopMenu li#helpMenuTrigger:hover {
@@ -96,10 +97,20 @@ body#home {
 .header .TopMenu .inner #newTopMenu #helpMenu li {
 	display: block;
 	text-align: center;
-	padding: 5px 10px;
+	padding: 7px 10px;
+	font-size: 15px;
 }
 .header .TopMenu .inner #newTopMenu #helpMenu li .customerService {
 	text-transform: uppercase;
+	cursor: default;
+}
+.header .TopMenu .inner #newTopMenu #helpMenu li .fa-mobile {
+	font-size: 28px;
+	line-height: 20px;
+	vertical-align: middle;
+}
+.header .TopMenu .inner #newTopMenu #helpMenu li .phoneNumber {
+	vertical-align: middle;
 }
 .header .TopMenu .inner #newTopMenu #helpMenu li .btn {
 	height:auto;
@@ -286,4 +297,3 @@ body#home {
 		display: none !important;
 	}
 }
-
