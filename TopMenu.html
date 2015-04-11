@@ -35,19 +35,11 @@
     </div>
 </div>​
 <script type="text/javascript">
+/*
     $('<style type="text/css">\
-	.header .TopMenu .inner #newTopMenu #helpMenuTrigger.open {\
-		border-color: #999;\
-		border-style: solid;\
-		border-width: 1px 1px 0 1px;\
-		background-color: #fff;\
-		box-shadow: 2px -1px 2px 0 rgba(0,0,0,0.1);\
-		z-index: 999;\
-	}\
 		</style>')
     .appendTo('head');
-
-	//$(document).ready(function() {
+*/
     var helpMenuTrigger = $('#helpMenuTrigger');
     var helpMenuContainer = $('#helpMenu');
     // show the HelmMenu when the Help link is hoveed on
@@ -65,6 +57,27 @@
             }
         });
     }
-    showHelpMenu();
-	//});
+	function headerFunctions () {
+		if ($('#loginGreeting a').text('Sign Out')) {
+			console.log('we\'re logged in!');
+			$.ajax({
+			    url: "/account.php?action=account_details",
+			    type: 'GET',
+			    dataType: 'html',
+			    success: function(result) {
+			        var html = $(result);
+					var accountFirstName = html.find('input[name="account_firstname"]').attr('value');
+					console.log(accountFirstName);
+					function addAccountName() {
+						$('#welcomeHelloLogin').html('Hello, ' + '<b id="accountFirstName">' + accountFirstName + '</b>! ');
+					}
+					addAccountName();
+			    },
+			});
+		}
+	};
+	$(document).ready( function() {
+		headerFunctions();
+		showHelpMenu();
+	});
 </script>
