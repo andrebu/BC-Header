@@ -21,82 +21,50 @@
                 <div>%%GLOBAL_LoginOrLogoutText%%</div>
             </li>
         </ul> -->
-<script type="text/javascript">
-        var helpMenuTrigger = $('#helpMenuTrigger');
-        var helpMenuContainer = $('#helpMenu');
-            function showMenu(){
-                document.getElementById("helpMenu").style.display = 'block';//display drop down menu
-                helpMenuTrigger.css({
-                    'border-color': '#999',
-                    'border-style': 'solid',
-                    'border-width': '1px 1px 0 1px',
-                    'background-color': '#fff',
-                    'box-shadow': '2px -1px 2px 0 rgba(0,0,0,0.1)',
-                    'z-index': '999',
-                })
-            }
-            function closeMenu(){
-                document.getElementById("helpMenu").style.display = 'none';
-            }
-</script>
         <ul id="newTopMenu">
-            <li>Why Shop Online?</li>|<li>Reviews</li>|<li>FAQ</li>|<li id="helpMenuTrigger" onMouseOver="showMenu()">Help <i class="fa fa-caret-down"></i></li>
-            <div id="helpMenu" onMouseOut="closeMenu()">
+            <li>Why Shop Online?</li>|<li>Reviews</li>|<li>FAQ</li>|<li id="helpMenuTrigger">Help <i class="fa fa-caret-down"></i></li>
+            <div id="helpMenu">
                 <ul>
                     <li><span class="green customerService">Customer Service</span></li>
-                    <li><i class="fa fa-mobile"></i> 1-844-326-5786</li>
+                    <li><i class="fa fa-mobile"></i> <span>1-844-326-5786</span></li>
                     <li><i class="fa fa-envelope green"></i> info@dankstop.com</li>
                     <li><a href="/contact-us/" class="btn btn-default">Contact Us</a></li>
                 </ul>
             </div>
-<script type="text/javascript">
-    $(document).ready(function() {
-        var helpMenuTrigger = $('#helpMenuTrigger');
-        var helpMenuContainer = $('#helpMenu');
-        // use countdown timer plugin to set the "countown to sale's end" clock 
-        function showHelpMenu() {
-/*
-            helpMenuTrigger.on({
-                mouseenter: function(event) {
-                    helpMenuContainer.show();
-                    helpMenuTrigger.css({
-                        'border-color': '#999',
-                        'border-style': 'solid',
-                        'border-width': '1px 1px 0 1px',
-                        'background-color': '#fff',
-                        'box-shadow': '2px -1px 2px 0 rgba(0,0,0,0.1)',
-                        'z-index': '999',
-                    })
-                },
-                mouseleave: function(event) {
-                    if (!helpMenuContainer) {
-                        helpMenuContainer.hide();
-                    }
-                },
-                click: function(event) {
-                }
-            });
-*/
-/*
-            function showMenu(){
-                document.getElementById("helpMenu").style.display = 'block';//display drop down menu
-                helpMenuTrigger.css({
-                    'border-color': '#999',
-                    'border-style': 'solid',
-                    'border-width': '1px 1px 0 1px',
-                    'background-color': '#fff',
-                    'box-shadow': '2px -1px 2px 0 rgba(0,0,0,0.1)',
-                    'z-index': '999',
-                })
-            }
-            function closeMenu(){
-                document.getElementById("helpMenu").style.display = 'none';
-            }
-*/
-        }
-        showHelpMenu();
-   });
-</script>
         </ul>
     </div>
 </div>​
+<script type="text/javascript">
+    $('<style type="text/css">\
+	.header .TopMenu .inner #newTopMenu #helpMenuTrigger.open {\
+		border-color: #999;\
+		border-style: solid;\
+		border-width: 1px 1px 0 1px;\
+		background-color: #fff;\
+		box-shadow: 2px -1px 2px 0 rgba(0,0,0,0.1);\
+		z-index: 999;\
+	}\
+		</style>')
+    .appendTo('head');
+
+	//$(document).ready(function() {
+    var helpMenuTrigger = $('#helpMenuTrigger');
+    var helpMenuContainer = $('#helpMenu');
+    // show the HelmMenu when the Help link is hoveed on
+    function showHelpMenu() {
+        $('#helpMenuTrigger, #helpMenu').on({
+            mouseenter: function(event) {
+            	helpMenuTrigger.addClass('open');
+            	helpMenuContainer.show();
+            },
+            mouseleave: function(event) {
+            	helpMenuTrigger.removeClass('open');
+				helpMenuContainer.hide();
+            },
+            click: function(event) {
+            }
+        });
+    }
+    showHelpMenu();
+	//});
+</script>
