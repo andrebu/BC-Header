@@ -52,6 +52,11 @@ To get this to work, you just need to require the module once per run-time, like
 ##Resources
 - [Get the content of another page's div with jQuery Ajax](http://stackoverflow.com/questions/14683736/get-the-content-of-another-pages-div-with-jquery-ajax)
 - [Multiple Attribute Selector [name="value"][name2="value2"]](https://api.jquery.com/multiple-attribute-selector/)
+- [How to use multiple jquery object variables as selectors?](http://stackoverflow.com/questions/18504075/how-to-use-multiple-jquery-object-variables-as-selectors)
+- [Drop down menu closes when i hover on links](http://stackoverflow.com/questions/23449103/drop-down-menu-closes-when-i-hover-on-links)
+- [Can't get z-index to work for div inside of another div](http://stackoverflow.com/questions/4456234/cant-get-z-index-to-work-for-div-inside-of-another-div)
+- [CSS :not :not()](https://developer.mozilla.org/en-US/docs/Web/CSS/:not)
+
 
 
 
