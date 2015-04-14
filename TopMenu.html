@@ -32,8 +32,9 @@
     var globalFirstName="%%GLOBAL_CurrentCustomerFirstName%%";
     var helpMenuTrigger = $('#helpMenuTrigger');
     var helpMenuContainer = $('#helpMenu');
-    // show the HelmMenu when the Help link is hovered on
+    // Login and Logout features
     function addAccountName() {
+/*
         if (globalFirstName!="" && globalFirstName!="Guest")
         {
             //Customer is Logged On
@@ -44,9 +45,11 @@
             document.writeln ('<a href="%%GLOBAL_ShopPath%%/login.php?action=create_account">Create account </a>');
         };
         $('#welcomeHelloLogin').html('Hello, ' + '<b id="accountFirstName">' + globalFirstName + '</b>! ');
+*/
     }
-//    addAccountName();
+    addAccountName();
 
+    // show the HelmMenu when the Help link is hovered on
     function showHelpMenu() {
         $('#helpMenuTrigger, #helpMenu').on({
             mouseenter: function(event) {
@@ -62,6 +65,7 @@
         });
     }
     $(document).ready( function() {
+	    addAccountName();
         showHelpMenu();
     });
 //]]>
