@@ -26,6 +26,24 @@
 
     // Login and Logout features
     function addAccountName() {	    
+	    console.log("add account name");
+		var accountMenuTriggerLink = $('#myAccountTriggerLink');
+		var accountMenuTriggerText = $('#myAccountLoginLogout');
+	    var globalFirstName="%%GLOBAL_CurrentCustomerFirstName%%";
+        if (globalFirstName!="" && globalFirstName!="Guest")
+        {
+	    console.log("if worked, then what?");
+	    console.log(accountMenuTriggerLink);
+	    console.log(accountMenuTriggerText);
+	    console.log(accountMenuTriggerLink.attr('href'));
+	    console.log(accountMenuTriggerText.text());
+            //Customer is Logged On
+            accountMenuTriggerLink.attr('href', '/account.php');
+            accountMenuTriggerText.text(globalFirstName);
+        } else {
+            //Customer is not Logged On
+            return;
+        };
 /*
 	    var globalFirstName="%%GLOBAL_CurrentCustomerFirstName%%";
         if (globalFirstName!="" && globalFirstName!="Guest")
@@ -73,8 +91,8 @@
         });
     }
     
-    addAccountName();
     $(document).ready( function() {
+	    addAccountName();
         showDDMenu();
     });
 //]]>
