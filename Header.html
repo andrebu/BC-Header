@@ -23,9 +23,18 @@
                     <div class="headerSearchContainer">%%Panel.HeaderSearch%%</div>
                     <div class="search-mobile mobile">%%Panel.HeaderSearch%%</div>
                     <div id="myAccountTrigger">
-                        <span>Hi, %%GLOBAL_CurrentCustomerFirstName%%! (%%GLOBAL_LoginOrLogoutText%%)</span>
-                        <br>
-                        <span>My Account <i class="fa fa-caret-down"></i></span>
+                        <a id="myAccountTriggerLink" href="/login.php">
+                            <span>Hi, <span id="myAccountLoginLogout">Sign in</span></span>
+                            <br>
+                            <span>My DankStop <i class="fa fa-caret-down"></i></span>
+                        </a>
+                    </div>
+                    <div id="myAccountDDMenu">
+                        <ul>
+                            <li><a href="/account/">My DankStop</a></li>
+                            <li><a href="/orders/">My Orders</a></li>
+                            <li><a href="/my-reviews/">My Reviews</a></li>
+                        </ul>
                     </div>
                     <div class="header-secondary">
                         <a href="%%GLOBAL_ShopPathNormal%%/cart.php" title="%%LNG_ViewCart%%">
