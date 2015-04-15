@@ -322,6 +322,9 @@ body#home {
 	.header #Header .headerSearchContainer {
 		display: none;
 	}
+	.header #Header .inner #myAccountTrigger {
+		display: none;
+	}
 	.header #Header .inner .header-secondary {
 		top: 12px;
 	}
@@ -342,6 +345,9 @@ body#home {
 	.header #Header .headerSearchContainer {
 		display: none;
 	}
+	.header #Header .inner #myAccountTrigger {
+		display: none;
+	}
 	.header #Header .inner .header-secondary {
 		top: 12px;
 	}
@@ -360,6 +366,9 @@ body#home {
 		margin: 0;
 	}
 	.header #Header .headerSearchContainer {
+		display: none;
+	}
+	.header #Header .inner #myAccountTrigger {
 		display: none;
 	}
 	.header #Header .inner .header-secondary {
