@@ -1,17 +1,10 @@
 <script type="text/javascript">
 //<![CDATA[
-                
-/*
-    $('<style type="text/css">\
-        </style>')
-    .appendTo('head');
-*/
+//$('<style type="text/css">\</style>').appendTo('head');
 
-    var globalFirstName="%%GLOBAL_CurrentCustomerFirstName%%";
-    var helpMenuTrigger = $('#helpMenuTrigger');
-    var helpMenuContainer = $('#helpMenu');
     // show the HelmMenu when the Help link is hoveed on
     function addAccountName() {
+	    var globalFirstName="%%GLOBAL_CurrentCustomerFirstName%%";
         if (globalFirstName!="" && globalFirstName!="Guest")
         {
             //Customer is Logged On
@@ -25,7 +18,9 @@
     }
 //    addAccountName();
 
-    function showHelpMenu() {
+    function showDDMenu() {
+		var helpMenuTrigger = $('#helpMenuTrigger');
+		var helpMenuContainer = $('#helpMenu');
         $('#helpMenuTrigger, #helpMenu').on({
             mouseenter: function(event) {
                 helpMenuTrigger.addClass('open');
@@ -38,10 +33,24 @@
             click: function(event) {
             }
         });
+		var accountMenuTrigger = $('#myAccountTrigger');
+		var accountMenuContainer = $('#myAccountDDMenu');
+        $('#myAccountTrigger, #myAccountDDMenu').on({
+            mouseenter: function(event) {
+                accountMenuTrigger.addClass('open');
+                accountMenuContainer.show();
+            },
+            mouseleave: function(event) {
+                accountMenuTrigger.removeClass('open');
+                accountMenuContainer.hide();
+            },
+            click: function(event) {
+            }
+        });
     }
     $(document).ready( function() {
         headerFunctions();
-        showHelpMenu();
+        showDDMenu();
     });
 //]]>
 </script>
