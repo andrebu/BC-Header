@@ -382,3 +382,117 @@ body#home {
 		display: none !important;
 	}
 }
+@media screen and (device-aspect-ratio: 2/3) {/* Top Header - top section of three section header */
+/* Main Header - middle section of three section header */
+	.header #Header {
+		margin: 0;
+	}
+	.header #Header .headerSearchContainer {
+		display: none;
+	}
+	.header #Header .inner #myAccountTrigger {
+		display: none;
+	}
+	.header #Header .inner .header-secondary {
+		top: 12px;
+	}
+/* SubHeader Header - bottom section of three section header */
+	#subHeader {
+		display:none;
+	}
+	.header-logo-mobile {
+		display: none !important;
+	}
+}
+
+@media screen and (device-aspect-ratio: 40/71) {/* Top Header - top section of three section header */
+/* Main Header - middle section of three section header */
+	.header #Header {
+		margin: 0;
+	}
+	.header #Header .headerSearchContainer {
+		display: none;
+	}
+	.header #Header .inner #myAccountTrigger {
+		display: none;
+	}
+	.header #Header .inner .header-secondary {
+		top: 12px;
+	}
+/* SubHeader Header - bottom section of three section header */
+	#subHeader {
+		display:none;
+	}
+	.header-logo-mobile {
+		display: none !important;
+	}
+}
+
+@media screen and (device-aspect-ratio: 667/375) {/* Top Header - top section of three section header */
+/* Main Header - middle section of three section header */
+	.header #Header {
+		margin: 0;
+	}
+	.header #Header .headerSearchContainer {
+		display: none;
+	}
+	.header #Header .inner #myAccountTrigger {
+		display: none;
+	}
+	.header #Header .inner .header-secondary {
+		top: 12px;
+	}
+/* SubHeader Header - bottom section of three section header */
+	#subHeader {
+		display:none;
+	}
+	.header-logo-mobile {
+		display: none !important;
+	}
+}
+
+@media screen and (device-aspect-ratio: 16/9) {/* Top Header - top section of three section header */
+/* Main Header - middle section of three section header */
+	.header #Header {
+		margin: 0;
+	}
+	.header #Header .headerSearchContainer {
+		display: none;
+	}
+	.header #Header .inner #myAccountTrigger {
+		display: none;
+	}
+	.header #Header .inner .header-secondary {
+		top: 12px;
+	}
+/* SubHeader Header - bottom section of three section header */
+	#subHeader {
+		display:none;
+	}
+	.header-logo-mobile {
+		display: none !important;
+	}
+}
+
+@media screen and (device-aspect-ratio: 3/4) {/* Top Header - top section of three section header */
+/* Main Header - middle section of three section header */
+	.header #Header {
+		margin: 0;
+	}
+	.header #Header .headerSearchContainer {
+		display: none;
+	}
+	.header #Header .inner #myAccountTrigger {
+		display: none;
+	}
+	.header #Header .inner .header-secondary {
+		top: 12px;
+	}
+/* SubHeader Header - bottom section of three section header */
+	#subHeader {
+		display:none;
+	}
+	.header-logo-mobile {
+		display: none !important;
+	}
+}
