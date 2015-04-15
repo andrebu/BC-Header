@@ -8,7 +8,7 @@
         </div>
         %%Panel.SideCurrencySelector%%
         <ul id="newTopMenu">
-            <li>Why Shop Online?</li>|<li>Reviews</li>|<li>FAQ</li>|<li id="helpMenuTrigger">Help <i class="fa fa-caret-down"></i></li>
+            <li><a href="/why-shop-online/">Why Shop Online?</a></li>|<li><a href="/reviews/">Reviews</a></li>|<li><a href="/faq/">FAQ</a></li>|<li id="helpMenuTrigger">Help <i class="fa fa-caret-down"></i></li>
             <div id="helpMenu">
                 <ul>
                     <li><span class="green customerService">Customer Service</span></li>
@@ -22,21 +22,13 @@
 </div>
 <script type="text/javascript">
 //<![CDATA[
-//$('<style type="text/css">\</style>').appendTo('head');
-
     // Login and Logout features
     function addAccountName() {	    
-	    console.log("add account name");
 		var accountMenuTriggerLink = $('#myAccountTriggerLink');
 		var accountMenuTriggerText = $('#myAccountLoginLogout');
 	    var globalFirstName="%%GLOBAL_CurrentCustomerFirstName%%";
         if (globalFirstName!="" && globalFirstName!="Guest")
         {
-	    console.log("if worked, then what?");
-	    console.log(accountMenuTriggerLink);
-	    console.log(accountMenuTriggerText);
-	    console.log(accountMenuTriggerLink.attr('href'));
-	    console.log(accountMenuTriggerText.text());
             //Customer is Logged On
             accountMenuTriggerLink.attr('href', '/account.php');
             accountMenuTriggerText.text(globalFirstName);
@@ -44,19 +36,6 @@
             //Customer is not Logged On
             return;
         };
-/*
-	    var globalFirstName="%%GLOBAL_CurrentCustomerFirstName%%";
-        if (globalFirstName!="" && globalFirstName!="Guest")
-        {
-            //Customer is Logged On
-            document.writeln ('<a href="%%GLOBAL_ShopPath%%/login.php?actio$n=logout">Sign out</a>');
-        } else {
-            //Customer is not Logged On
-            document.writeln ('<a href="%%GLOBAL_ShopPath%%/login.php">Sign in</a>');
-            document.writeln ('<a href="%%GLOBAL_ShopPath%%/login.php?action=create_account">Create account </a>');
-        };
-        $('#welcomeHelloLogin').html('Hello, ' + '<b id="accountFirstName">' + globalFirstName + '</b>! ');
-*/
     }
 
     // show the HelmMenu when the Help link is hovered on
