@@ -22,19 +22,12 @@
 </div>
 <script type="text/javascript">
 //<![CDATA[
-                
-/*
-    $('<style type="text/css">\
-        </style>')
-    .appendTo('head');
-*/
+//$('<style type="text/css">\</style>').appendTo('head');
 
-    var globalFirstName="%%GLOBAL_CurrentCustomerFirstName%%";
-    var helpMenuTrigger = $('#helpMenuTrigger');
-    var helpMenuContainer = $('#helpMenu');
     // Login and Logout features
-    function addAccountName() {
+    function addAccountName() {	    
 /*
+	    var globalFirstName="%%GLOBAL_CurrentCustomerFirstName%%";
         if (globalFirstName!="" && globalFirstName!="Guest")
         {
             //Customer is Logged On
@@ -47,10 +40,11 @@
         $('#welcomeHelloLogin').html('Hello, ' + '<b id="accountFirstName">' + globalFirstName + '</b>! ');
 */
     }
-    addAccountName();
 
     // show the HelmMenu when the Help link is hovered on
-    function showHelpMenu() {
+    function showDDMenu() {
+		var helpMenuTrigger = $('#helpMenuTrigger');
+		var helpMenuContainer = $('#helpMenu');
         $('#helpMenuTrigger, #helpMenu').on({
             mouseenter: function(event) {
                 helpMenuTrigger.addClass('open');
@@ -63,10 +57,25 @@
             click: function(event) {
             }
         });
+		var accountMenuTrigger = $('#myAccountTrigger');
+		var accountMenuContainer = $('#myAccountDDMenu');
+        $('#myAccountTrigger, #myAccountDDMenu').on({
+            mouseenter: function(event) {
+                accountMenuTrigger.addClass('open');
+                accountMenuContainer.show();
+            },
+            mouseleave: function(event) {
+                accountMenuTrigger.removeClass('open');
+                accountMenuContainer.hide();
+            },
+            click: function(event) {
+            }
+        });
     }
+    
+    addAccountName();
     $(document).ready( function() {
-	    addAccountName();
-        showHelpMenu();
+        showDDMenu();
     });
 //]]>
 </script>
