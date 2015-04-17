@@ -1,6 +1,6 @@
 /* Site Wide to go with new header */
 body#home {
-	font-family: 'Futura';
+/* 	font-family: 'Futura'; */
 }
 .green {
 	color: #39b54a;
@@ -106,7 +106,7 @@ body#home {
 	top: 28px;
 	z-index: 99;
 	padding: 4px 4px 13px;
-	right: -4px;
+	right: -2px;
 	display: none;
 }
 .header .TopMenu .inner #newTopMenu #helpMenu ul {
@@ -163,8 +163,11 @@ body#home {
 	vertical-align: middle;
 	padding: 0 0 0 4px;
 }
+.header #Header #LayoutColumn1 {
+	display: flex;
+}
 .header #Header .headerSearchContainer {
-	
+	overflow: auto;
 }
 .header #Header .headerSearchContainer #SearchForm {
 	float: left;
@@ -174,7 +177,7 @@ body#home {
 	border: 2px solid #39B54A;
 	border-radius: 3px;
 	min-height: 40px;
-	margin-left: 130px;
+/* 	margin-left: 130px; */
 }
 .header #Header .headerSearchContainer #SearchForm form {
 	
@@ -200,14 +203,31 @@ body#home {
 .header #Header .inner #myAccountTrigger {
 	display: block;
 	font-size: 13px;
+/*
 	position: absolute;
 	top: 4px;
 	right: 160px;
+*/
 	width: 110px;
-	padding: 4px 10px 10px 10px;
+	margin: 0 30px;
+	position: relative;
+/* 	padding: 10px 10px 10px 14px; */
+/* 	padding: 1px; */
+	border: 1px solid transparent;
+	border-width: 1px 1px 0 1px;
 }
-.header #Header .inner #myAccountTrigger > span:first-of-type {
+.header #Header .inner #myAccountTrigger .myAccountHi {
 	font-size: 12px;
+}
+.header #Header .inner #myAccountTrigger .myAccountMyDS {
+	font-weight: 600;
+}
+.header #Header .inner #myAccountTrigger .myAccountMyDS .fa-caret.down {
+	color: #111 !important;
+}
+.header #Header .inner #myAccountTrigger #myAccountTriggerLink {
+	display: block;
+	padding: 10px 10px 10px 14px;
 }
 .header #Header .inner #myAccountTrigger.open {
 	border-color: #999;
@@ -217,17 +237,18 @@ body#home {
 	box-shadow: 4px -1px 4px -1px rgba(0,0,0,0.1);
 	color: #39B54A;
 	z-index: 999 !important;
-	padding: 3px 9px 10px 10px !important;
+/* 	padding: 9px 9px 10px 13px !important; */
+/* 	padding: 0; */
 }
 .header #Header .inner #myAccountDDMenu {
 	border: solid 1px #999;
 	background-color: #fff;
 	box-shadow: 1px 2px 5px 2px rgba(0,0,0,0.1);
 	position: absolute;
-	top: 50px;
+	top: 51px;
 	z-index: 99;
 /* 	padding: 10px 13px; */
-	right: 160px;
+	right: -1px;
 	font-size: 15px;
 	display: none; 
 }
@@ -274,15 +295,11 @@ body#home {
 	color: #fff;
 	display: table;
 }
-.header #subHeader .inner a {
-	color: #eaeaea;
-}
-.header #subHeader .inner a:hover {
-	color: #fff;
-}
 .header #subHeader .inner .shopByContainer {
-/* 	float: left; */
+/*
+	float: left;
 	display: table-cell;
+*/
 	vertical-align: middle;
 	height: 40px;
 	padding: 0 121px 0 68px;
@@ -292,10 +309,26 @@ body#home {
 }
 .header #subHeader .inner .PageMenu ul {
 	margin:0;
+	display: flex;
+	flex-direction: row;
 }
-.header #subHeader .inner .PageMenu a {
+.header #subHeader .inner .PageMenu ul li {
+	flex-grow: 1;
+}
+.header #subHeader .inner .PageMenu ul li a {
 	font-family: 'Futura';
 	text-transform: none;
+	line-height: 40px;
+	color: #eaeaea;
+	display: block;
+	padding: 0 !important;
+	text-align: center;
+}
+.header #subHeader .inner .PageMenu ul li:hover {
+	background-color: #333;
+}
+.header #subHeader .inner .PageMenu ul li:hover a {
+	color: #fff;
 }
 .header #subHeader .inner .freeShippingContainer {
 /* 	float: right; */
@@ -303,8 +336,21 @@ body#home {
 	vertical-align: middle;
 	height: 40px;
 }
+/*
+.freeShippingTruck {
+	background-image: url('%%ASSET_images/freeshippingtruck.png%%');
+	background-position: center;
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+}
+*/
 .header #subHeader .inner .freeShippingContainer .freeShippingText {
 	float: right;
+	padding: 0 0 0 47px;
+	background-image: url('//cdn3.bigcommerce.com/s-mixi7d/templates/__custom/images/freeshippingtruck.png?t=1429230948');
+	background-position: left;
+	background-size: 41px 20px;
+	background-repeat: no-repeat;
 }
 
 
