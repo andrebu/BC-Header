@@ -3,7 +3,7 @@
     <div class="inner">
         <div class="" style="display:%%GLOBAL_HideAccountOptions%%" id="loginContainer">
             <span class="loginGreeting" id="loginGreeting">
-                Welcome, %%GLOBAL_CurrentCustomerFirstName%%! (%%GLOBAL_LoginOrLogoutText%%)
+                <span id="loginGreetingSalutation">Welcome, </span><span id="loginGreetingName">%%GLOBAL_CurrentCustomerFirstName%%</span> (%%GLOBAL_LoginOrLogoutText%%)
             </span>
         </div>
         %%Panel.SideCurrencySelector%%
@@ -24,14 +24,16 @@
 //<![CDATA[
     // Login and Logout features
     function addAccountName() {	    
-		var accountMenuTriggerLink = $('#myAccountTriggerLink');
-		var accountMenuTriggerText = $('#myAccountLoginLogout');
+		var $loginGreetingSalutation = $('#loginGreetingSalutation');
+		var $accountMenuTriggerLink = $('#myAccountTriggerLink');
+		var $accountMenuTriggerText = $('#myAccountLoginLogout');
 	    var globalFirstName="%%GLOBAL_CurrentCustomerFirstName%%";
         if (globalFirstName!="" && globalFirstName!="Guest")
         {
             //Customer is Logged On
-            accountMenuTriggerLink.attr('href', '/account.php');
-            accountMenuTriggerText.text(globalFirstName);
+            $loginGreetingSalutation.text('Hello, ');
+            $accountMenuTriggerLink.attr('href', '/account.php');
+            $accountMenuTriggerText.text(globalFirstName);
         } else {
             //Customer is not Logged On
             return;
@@ -40,38 +42,38 @@
 
     // show the HelmMenu when the Help link is hovered on
     function showDDMenu() {
-		var helpMenuTrigger = $('#helpMenuTrigger');
-		var helpMenuContainer = $('#helpMenu');
+		var $helpMenuTrigger = $('#helpMenuTrigger');
+		var $helpMenuContainer = $('#helpMenu');
         $('#helpMenuTrigger, #helpMenu').on({
             mouseenter: function(event) {
-                helpMenuTrigger.addClass('open');
-                helpMenuContainer.show();
+                $helpMenuTrigger.addClass('open');
+                $helpMenuContainer.show();
             },
             mouseleave: function(event) {
-                helpMenuTrigger.removeClass('open');
-                helpMenuContainer.hide();
+                $helpMenuTrigger.removeClass('open');
+                $helpMenuContainer.hide();
             },
             click: function(event) {
             }
         });
-		var accountMenuTrigger = $('#myAccountTrigger');
-		var accountMenuContainer = $('#myAccountDDMenu');
+		var $accountMenuTrigger = $('#myAccountTrigger');
+		var $accountMenuContainer = $('#myAccountDDMenu');
         $('#myAccountTrigger, #myAccountDDMenu').on({
             mouseenter: function(event) {
-                accountMenuTrigger.addClass('open');
-                accountMenuContainer.show();
+                $accountMenuTrigger.addClass('open');
+                $accountMenuContainer.show();
             },
             mouseleave: function(event) {
-                accountMenuTrigger.removeClass('open');
-                accountMenuContainer.hide();
+                $accountMenuTrigger.removeClass('open');
+                $accountMenuContainer.hide();
             },
             click: function(event) {
             }
         });
     }
-    
+
+    addAccountName();    
     $(document).ready( function() {
-	    addAccountName();
         showDDMenu();
     });
 //]]>
