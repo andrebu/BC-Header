@@ -56,6 +56,10 @@ To get this to work, you just need to require the module once per run-time, like
 - [Drop down menu closes when i hover on links](http://stackoverflow.com/questions/23449103/drop-down-menu-closes-when-i-hover-on-links)
 - [Can't get z-index to work for div inside of another div](http://stackoverflow.com/questions/4456234/cant-get-z-index-to-work-for-div-inside-of-another-div)
 - [CSS :not :not()](https://developer.mozilla.org/en-US/docs/Web/CSS/:not)
+###Salebanner
+- [jQuery scrolltop firefox not working](http://stackoverflow.com/questions/17776544/jquery-scrolltop-firefox-not-working)
+- [Fading Element on Scroll](http://stackoverflow.com/questions/1484467/fading-element-on-scroll)
+- [iPhone 5 CSS media query](http://stackoverflow.com/questions/12539697/iphone-5-css-media-query)
 
 
 
