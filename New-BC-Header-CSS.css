@@ -49,10 +49,13 @@ body#home {
 .header .TopMenu .inner #loginContainer {
 	float: left;
 }
-.header .TopMenu .inner #loginContainer .loginGreeting a {
+.header .TopMenu .inner #loginContainer #loginGreeting #loginGreetingName {
+	font-weight: 600;
+}
+.header .TopMenu .inner #loginContainer #loginGreeting a {
 	color: #39B54A;
 }
-.header .TopMenu .inner #loginContainer .loginGreeting a:hover {
+.header .TopMenu .inner #loginContainer #loginGreeting a:hover {
 	color: #666;
 }
 .header .TopMenu .inner #newTopMenu {
@@ -208,9 +211,9 @@ body#home {
 	top: 4px;
 	right: 160px;
 */
-	width: 110px;
+/* 	width: 110px; */
 	margin: 0 30px;
-	position: relative;
+	position: absolute;
 /* 	padding: 10px 10px 10px 14px; */
 /* 	padding: 1px; */
 	border: 1px solid transparent;
@@ -228,12 +231,14 @@ body#home {
 .header #Header .inner #myAccountTrigger #myAccountTriggerLink {
 	display: block;
 	padding: 10px 10px 10px 14px;
+	z-index: 100;
+	position: relative;
+	background-color: #fff;
 }
 .header #Header .inner #myAccountTrigger.open {
 	border-color: #999;
 	border-style: solid;
 	border-width: 1px 1px 0 1px;
-	background-color: #fff;
 	box-shadow: 4px -1px 4px -1px rgba(0,0,0,0.1);
 	color: #39B54A;
 	z-index: 999 !important;
