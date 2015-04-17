@@ -32,6 +32,8 @@
         {
             //Customer is Logged On
             $loginGreetingSalutation.text('Hello, ');
+            console.log($accountMenuTriggerLink );
+            console.log($accountMenuTriggerText );
             $accountMenuTriggerLink.attr('href', '/account.php');
             $accountMenuTriggerText.text(globalFirstName);
         } else {
@@ -72,8 +74,8 @@
         });
     }
 
-    addAccountName();    
     $(document).ready( function() {
+	    addAccountName();    
         showDDMenu();
     });
 //]]>
