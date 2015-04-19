@@ -56,6 +56,8 @@ To get this to work, you just need to require the module once per run-time, like
 - [Drop down menu closes when i hover on links](http://stackoverflow.com/questions/23449103/drop-down-menu-closes-when-i-hover-on-links)
 - [Can't get z-index to work for div inside of another div](http://stackoverflow.com/questions/4456234/cant-get-z-index-to-work-for-div-inside-of-another-div)
 - [CSS :not :not()](https://developer.mozilla.org/en-US/docs/Web/CSS/:not)
+- [Div has no height even if it has content [duplicate]](http://stackoverflow.com/questions/19354845/div-has-no-height-even-if-it-has-content)
+- [Why would a JavaScript variable start with a dollar sign?](http://stackoverflow.com/questions/205853/why-would-a-javascript-variable-start-with-a-dollar-sign)
 ###Salebanner
 - [jQuery scrolltop firefox not working](http://stackoverflow.com/questions/17776544/jquery-scrolltop-firefox-not-working)
 - [Fading Element on Scroll](http://stackoverflow.com/questions/1484467/fading-element-on-scroll)
