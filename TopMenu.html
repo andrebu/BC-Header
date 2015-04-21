@@ -8,7 +8,7 @@
         </div>
         %%Panel.SideCurrencySelector%%
         <ul id="newTopMenu">
-            <li><a href="/why-shop-online/">Why Shop Online?</a></li>|<li><a href="/reviews/">Reviews</a></li>|<li><a href="/faq/">FAQ</a></li>|<li id="helpMenuTrigger">Help <i class="fa fa-caret-down"></i></li>
+            <li><a href="/why-shop-online/">Why Shop Online?</a></li>|<li><a href="/giftcertificates.php">Gift Certificates</a></li>|<li><a href="/reviews/">Reviews</a></li>|<li><a href="/faq/">FAQ</a></li>|<li id="helpMenuTrigger">Help <i class="fa fa-caret-down"></i></li>
             <div id="helpMenu">
                 <ul>
                     <li><span class="green customerService">Customer Service</span></li>
@@ -23,11 +23,11 @@
 <script type="text/javascript">
 //<![CDATA[
     // Login and Logout features
-    function addAccountName() {	    
-		var $loginGreetingSalutation = $('#loginGreetingSalutation');
-		var $accountMenuTriggerLink = $('#myAccountTriggerLink');
-		var $accountMenuTriggerText = $('#myAccountLoginLogout');
-	    var globalFirstName="%%GLOBAL_CurrentCustomerFirstName%%";
+    function addAccountName() {        
+        var $loginGreetingSalutation = $('#loginGreetingSalutation');
+        var $accountMenuTriggerLink = $('#myAccountTriggerLink');
+        var $accountMenuTriggerText = $('#myAccountLoginLogout');
+        var globalFirstName="%%GLOBAL_CurrentCustomerFirstName%%";
         if (globalFirstName!="" && globalFirstName!="Guest")
         {
             //Customer is Logged On
@@ -42,8 +42,8 @@
 
     // show the HelmMenu when the Help link is hovered on
     function showDDMenu() {
-		var $helpMenuTrigger = $('#helpMenuTrigger');
-		var $helpMenuContainer = $('#helpMenu');
+        var $helpMenuTrigger = $('#helpMenuTrigger');
+        var $helpMenuContainer = $('#helpMenu');
         $('#helpMenuTrigger, #helpMenu').on({
             mouseenter: function(event) {
                 $helpMenuTrigger.addClass('open');
@@ -56,8 +56,8 @@
             click: function(event) {
             }
         });
-		var $accountMenuTrigger = $('#myAccountTrigger');
-		var $accountMenuContainer = $('#myAccountDDMenu');
+        var $accountMenuTrigger = $('#myAccountTrigger');
+        var $accountMenuContainer = $('#myAccountDDMenu');
         $('#myAccountTrigger, #myAccountDDMenu').on({
             mouseenter: function(event) {
                 $accountMenuTrigger.addClass('open');
@@ -73,7 +73,7 @@
     }
 
     $(document).ready( function() {
-	    addAccountName();    
+        addAccountName();    
         showDDMenu();
     });
 //]]>
