@@ -223,7 +223,7 @@ body#home {
 	line-height: 3;
 	line-height: 38px;
 	font-size: 17px;
-	width: 400px;
+	width: 500px;
 }
 .header #Header .headerSearchContainer #SearchForm .Button {
 	float: right;
@@ -252,8 +252,9 @@ body#home {
 /* 	padding: 10px 10px 10px 14px; */
 /* 	padding: 1px; */
 	min-width: 122px;
-	margin: 0 10%;
-	position: absolute;
+/* 	margin: 0 9%; */
+	margin: 0 auto;
+	position: relative;
 	border: 1px solid transparent;
 	border-width: 1px 1px 0 1px;
 }
@@ -319,6 +320,7 @@ body#home {
 }
 .header #Header .inner .header-secondary {
 	top: 0;
+	position: relative;
 }
 
 
@@ -603,11 +605,14 @@ body#home {
 		margin: 0 20px;
 	}
 }
+/* Ends up being 13' MacPro */
+/*
 @media only screen and (device-width : 1280px) and (orientation: landscape) {
 	.header #Header .inner #myAccountTrigger {
 		margin: 0 20px;
 	}
 }
+*/
 @media only screen and (width : 961px) and (orientation: landscape) {
 	.header #Header .inner #myAccountTrigger {
 		margin: 0 20px;
@@ -625,7 +630,7 @@ body#home {
 		margin: 0 20px;
 	}
 	.header #Header .headerSearchContainer #SearchForm input.Textbox#search_query {
-		width: 360px;
+		width: 350px;
 	}
 }
 /*– Nexus 7, Samsung Galaxy Note III, iPad 3 / 4 –*/
@@ -634,11 +639,29 @@ body#home {
 		margin: 0 20px;
 	}
 	.header #Header .headerSearchContainer #SearchForm input.Textbox#search_query {
-		width: 360px;
+		width: 350px;
 	}
 }
 /*– iPad 3Gen/4Gen, –*/
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width:2048px) {
+	.header #Header .inner #myAccountTrigger {
+		margin: 0 20px;
+	}
+	.header #Header .headerSearchContainer #SearchForm input.Textbox#search_query {
+		width: 400px;
+	}
+}
+/*– Macbook Pro 13″, Samsung Nexus 10 –*/
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width:2560px) {
+	.header #Header .inner #myAccountTrigger {
+		margin: 0 20px;
+	}
+	.header #Header .headerSearchContainer #SearchForm input.Textbox#search_query {
+		width: 400px;
+	}
+}
+/*– Macbook Pro 15″ –*/
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width:2880px) {
 	.header #Header .inner #myAccountTrigger {
 		margin: 0 20px;
 	}
