@@ -474,7 +474,8 @@ body#home {
 		display: none !important;
 	}
 }
-@media screen and (device-aspect-ratio: 2/3) {/* Top Header - top section of three section header */
+@media screen and (device-aspect-ratio: 2/3) {
+	/* Top Header - top section of three section header */
 /* Main Header - middle section of three section header */
 	.header #Header {
 		margin: 0;
@@ -497,7 +498,8 @@ body#home {
 	}
 }
 
-@media screen and (device-aspect-ratio: 40/71) {/* Top Header - top section of three section header */
+@media screen and (device-aspect-ratio: 40/71) {
+	/* Top Header - top section of three section header */
 /* Main Header - middle section of three section header */
 	.header #Header {
 		margin: 0;
@@ -520,7 +522,8 @@ body#home {
 	}
 }
 
-@media screen and (device-aspect-ratio: 667/375) {/* Top Header - top section of three section header */
+@media screen and (device-aspect-ratio: 667/375) {
+	/* Top Header - top section of three section header */
 /* Main Header - middle section of three section header */
 	.header #Header {
 		margin: 0;
@@ -543,7 +546,8 @@ body#home {
 	}
 }
 
-@media screen and (device-aspect-ratio: 16/9) {/* Top Header - top section of three section header */
+@media screen and (device-aspect-ratio: 16/9) {
+	/* Top Header - top section of three section header */
 /* Main Header - middle section of three section header */
 	.header #Header {
 		margin: 0;
@@ -566,7 +570,8 @@ body#home {
 	}
 }
 
-@media screen and (device-aspect-ratio: 3/4) {/* Top Header - top section of three section header */
+@media screen and (device-aspect-ratio: 3/4) {
+	/* Top Header - top section of three section header */
 /* Main Header - middle section of three section header */
 	.header #Header {
 		margin: 0;
@@ -586,5 +591,58 @@ body#home {
 	}
 	.header-logo-mobile {
 		display: none !important;
+	}
+}
+@media only screen and (device-width : 800px) and (orientation: portrait) {
+	.header #Header .inner #myAccountTrigger {
+		margin: 0 20px;
+	}
+}
+@media only screen and (width : 603px) and (orientation: portrait) {
+	.header #Header .inner #myAccountTrigger {
+		margin: 0 20px;
+	}
+}
+@media only screen and (device-width : 1280px) and (orientation: landscape) {
+	.header #Header .inner #myAccountTrigger {
+		margin: 0 20px;
+	}
+}
+@media only screen and (width : 961px) and (orientation: landscape) {
+	.header #Header .inner #myAccountTrigger {
+		margin: 0 20px;
+	}
+}
+/*– iPad 1Gen/2Gen iPad Mini, Kindle Fire –*/
+@media only screen and (-webkit-min-device-pixel-ratio: 1) and (max-device-width:1024px) {
+	.header #Header .inner #myAccountTrigger {
+		margin: 0 20px;
+	}
+}
+/*– Nexus 7 (2012)–*/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.325) and (max-device-width:1280px) {
+	.header #Header .inner #myAccountTrigger {
+		margin: 0 20px;
+	}
+	.header #Header .headerSearchContainer #SearchForm input.Textbox#search_query {
+		width: 360px;
+	}
+}
+/*– Nexus 7, Samsung Galaxy Note III, iPad 3 / 4 –*/
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width:1920px) {
+	.header #Header .inner #myAccountTrigger {
+		margin: 0 20px;
+	}
+	.header #Header .headerSearchContainer #SearchForm input.Textbox#search_query {
+		width: 360px;
+	}
+}
+/*– iPad 3Gen/4Gen, –*/
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width:2048px) {
+	.header #Header .inner #myAccountTrigger {
+		margin: 0 20px;
+	}
+	.header #Header .headerSearchContainer #SearchForm input.Textbox#search_query {
+		width: 400px;
 	}
 }
