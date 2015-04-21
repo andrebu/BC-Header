@@ -419,6 +419,7 @@ body#home {
 	line-height: 40px;
 	vertical-align: middle;
 	display: inline-block;
+	font-family: "Futura";
 }
 .header #subHeader .inner .freeShippingContainer .freeShippingTruck {
 	background-image: url('//cdn3.bigcommerce.com/s-mixi7d/templates/__custom/images/freeshippingtruck.png?t=1429230948');
