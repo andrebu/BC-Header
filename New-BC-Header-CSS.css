@@ -2,6 +2,9 @@
 body#home {
 /* 	font-family: 'Futura'; */
 }
+.Left.fleft {
+	padding-right: 54px;
+}
 .green {
 	color: #39b54a;
 }
@@ -31,16 +34,18 @@ body#home {
 #biosnippet {
 	display: none;
 }
-.main .inner .Left #SideCategoryList {
+.main .inner .Left.fleft {
 	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1),0 4px 8px 0 rgba(0,0,0,0.2);
-	padding: 0 10px;
 	border: 2px solid #eaeaea;
+	padding: 0 10px;
+	margin: 10px 30px 0 0;
 }
 .main .inner .Left #SideCategoryList .treeview li {
 	margin: 0;
+	border: 0;
 }
 .main .inner .Left #SideCategoryList .treeview li a {
-	padding: 7px 0px;
+/* 	padding: 7px 0px; */
 	border-bottom: 0;
 }
 
@@ -48,7 +53,7 @@ body#home {
 
 /* New Header */
 .header {
-	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1),0 4px 8px 0 rgba(0,0,0,0.2);
+/* 	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1),0 4px 8px 0 rgba(0,0,0,0.2); */
 /*
 	position: fixed;
 	top: 0;
@@ -218,7 +223,7 @@ body#home {
 	line-height: 3;
 	line-height: 38px;
 	font-size: 17px;
-	width: 420px;
+	width: 400px;
 }
 .header #Header .headerSearchContainer #SearchForm .Button {
 	float: right;
@@ -230,6 +235,12 @@ body#home {
 .header #Header .headerSearchContainer #SearchForm .Button:hover {
 	background-color: #666;
 }
+.header #Header .search-mobile #SearchForm input.Textbox#search_query {
+	float: right;
+}
+.header #Header .search-mobile #SearchForm .Button {
+	float: left;
+}
 .header #Header .inner #myAccountTrigger {
 	display: block;
 	font-size: 13px;
@@ -238,11 +249,11 @@ body#home {
 	top: 4px;
 	right: 160px;
 */
-/* 	width: 110px; */
-	margin: 0 30px;
-	position: absolute;
 /* 	padding: 10px 10px 10px 14px; */
 /* 	padding: 1px; */
+	min-width: 122px;
+	margin: 0 10%;
+	position: absolute;
 	border: 1px solid transparent;
 	border-width: 1px 1px 0 1px;
 }
@@ -277,7 +288,7 @@ body#home {
 	background-color: #fff;
 	box-shadow: 1px 2px 5px 2px rgba(0,0,0,0.1);
 	position: absolute;
-	top: 51px;
+	top: 50px;
 	z-index: 99;
 /* 	padding: 10px 13px; */
 	right: -1px;
@@ -347,8 +358,12 @@ body#home {
 .header #subHeader .inner .PageMenu ul li {
 	flex-grow: 1;
 }
+.header #subHeader .inner .PageMenu ul li#headerPipesUnder100Link, 
+.header #subHeader .inner .PageMenu ul li#headerFeeStuffLink {
+	display: none;
+}
 .header #subHeader .inner .PageMenu ul li a {
-	font-family: 'Futura';
+/* 	font-family: 'Futura'; */
 	text-transform: none;
 	line-height: 40px;
 	color: #eaeaea;
