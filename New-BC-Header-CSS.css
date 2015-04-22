@@ -434,12 +434,19 @@ body table#QuickSearch.QuickSearch {
 	line-height: 40px;
 	display: inline-block;
 	float: right;
-	-moz-transform: scaleX(-1) skewX(30deg);
-	-o-transform: scaleX(-1) skewX(30deg);
-	-webkit-transform: scaleX(-1) skewX(30deg);
-	transform: scaleX(-1) skewX(20deg);
+	-moz-transform: scaleX(-1) skewX(33deg);
+	-o-transform: scaleX(-1) skewX(33deg);
+	-webkit-transform: scaleX(-1) skewX(33deg);
+	transform: scaleX(-1) skewX(33deg);
 	filter: FlipH;
 	-ms-filter: "FlipH";
+	-ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=-1, M12=-0.6494075931975105, M21=0, M22=1, SizingMethod='auto expand')";
+	filter: progid:DXImageTransform.Microsoft.Matrix(
+	        M11=-1,
+	        M12=-0.6494075931975105,
+	        M21=0,
+	        M22=1,
+	        SizingMethod='auto expand');
 	vertical-align: middle;
 }
 .header #subHeader .inner .freeShippingContainer .shippingLines {
@@ -452,37 +459,61 @@ body table#QuickSearch.QuickSearch {
 	float: right;
 	margin: 0px 4px;
 }
+.header #subHeader .inner .freeShippingContainer .shippingLines:before {
+	content: "";
+	display: block;
+	height: 1px;
+	width: 30px;
+	background: #777;
+	position: relative;
+	top: 17px;
+	left: 8px;
+}
+.header #subHeader .inner .freeShippingContainer .shippingLines:after {
+	content: "";
+	display: block;
+	height: 1px;
+	width: 35px;
+	background: #777;
+	position: relative;
+	top: -20px;
+	left: -1px;
+}
 .header #subHeader .inner .freeShippingContainer .shippingLines span {
 	content: "";
-	height: 10px;
+	height: 1px;
 	line-height: 40px;
-	display: block;
+	display: inline-block;
 	vertical-align: middle;
-	width: 2px;
+	width: 30px;
 	background: #eaeaea;
-	transform: rotate(90deg);
-	margin: 3px 30px;
-	padding: 5px 0;
+	position: relative;
+	top: -3px;
+	left: 10px;
 }
 .header #subHeader .inner .freeShippingContainer .shippingLines span:before {
 	content: "";
-	height: 25px;
+	height: 1px;
 	line-height: 40px;
 	display: block;
 	vertical-align: middle;
-	width: 1px;
+	width: 25px;
 	background: #eaeaea;
-	margin: -1px 6px;
+	position: relative;
+	top: -5px;
+	left: 9px;
 }
 .header #subHeader .inner .freeShippingContainer .shippingLines span:after {
 	content: "";
-	height: 30px;
+	height: 1px;
 	line-height: 40px;
 	display: block;
 	vertical-align: middle;
-	width: 1px;
+	width: 35px;
 	background: #eaeaea;
-	margin: -22px 12px;
+	position: relative;
+	top: 3px;
+	left: -8px;
 }
 
 
