@@ -63,6 +63,10 @@ To get this to work, you just need to require the module once per run-time, like
 - [Fading Element on Scroll](http://stackoverflow.com/questions/1484467/fading-element-on-scroll)
 - [iPhone 5 CSS media query](http://stackoverflow.com/questions/12539697/iphone-5-css-media-query)
 - [The insanely OCD mobile @media queries CSS file](http://annikalidne.com/code/the-insanely-ocd-mobile-media-queries-css-file)
+- [Flip an Image](https://css-tricks.com/snippets/css/flip-an-image/)
+- [CSS3 slanted div with background image, with image behind the whole thing](http://stackoverflow.com/questions/15393700/css3-slanted-div-with-background-image-with-image-behind-the-whole-thing)
+- [Trailing Line Decoration Headers in CSS](http://stackoverflow.com/questions/18540073/trailing-line-decoration-headers-in-css)
+- [Turn your CSS3 transforms syntax into something IE can understand—without using JavaScript—to get effects like rotation, scaling, and skewing.](http://www.useragentman.com/IETransformsTranslator/)
 
 
 
