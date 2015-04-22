@@ -499,6 +499,7 @@ body#home {
 	}
 	.header #Header .inner .header-secondary {
 		top: 12px;
+		position: absolute;
 	}
 /* SubHeader Header - bottom section of three section header */
 	#subHeader {
@@ -522,6 +523,7 @@ body#home {
 	}
 	.header #Header .inner .header-secondary {
 		top: 12px;
+		position: absolute;
 	}
 /* SubHeader Header - bottom section of three section header */
 	#subHeader {
@@ -545,6 +547,7 @@ body#home {
 	}
 	.header #Header .inner .header-secondary {
 		top: 12px;
+		position: absolute;
 	}
 /* SubHeader Header - bottom section of three section header */
 	#subHeader {
@@ -708,7 +711,7 @@ body#home {
 		margin: 0 20px;
 	}
 	.header #Header .headerSearchContainer #SearchForm input.Textbox#search_query {
-		width: 350px;
+/* 		width: 350px; */
 	}
 }
 /*– Nexus 7, Samsung Galaxy Note III, iPad 3 / 4 –*/
@@ -717,7 +720,7 @@ body#home {
 		margin: 0 20px;
 	}
 	.header #Header .headerSearchContainer #SearchForm input.Textbox#search_query {
-		width: 350px;
+/* 		width: 350px; */
 	}
 }
 /*– iPad 3Gen/4Gen, –*/
@@ -726,7 +729,7 @@ body#home {
 		margin: 0 20px;
 	}
 	.header #Header .headerSearchContainer #SearchForm input.Textbox#search_query {
-		width: 400px;
+/* 		width: 400px; */
 	}
 }
 /*– Macbook Pro 13″, Samsung Nexus 10 –*/
@@ -735,7 +738,7 @@ body#home {
 		margin: 0 20px;
 	}
 	.header #Header .headerSearchContainer #SearchForm input.Textbox#search_query {
-		width: 400px;
+/* 		width: 400px; */
 	}
 }
 /*– Macbook Pro 15″ –*/
@@ -744,6 +747,6 @@ body#home {
 		margin: 0 20px;
 	}
 	.header #Header .headerSearchContainer #SearchForm input.Textbox#search_query {
-		width: 400px;
+/* 		width: 400px; */
 	}
 }
