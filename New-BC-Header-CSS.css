@@ -405,6 +405,11 @@ body table#QuickSearch.QuickSearch {
 	display: table-cell;
 	vertical-align: middle;
 	height: 40px;
+/* 	width: 24%; */
+}
+.header #subHeader .inner .freeShippingContainer a {
+	display: block;
+	height: 40px;
 }
 /*
 .freeShippingTruck {
@@ -423,6 +428,8 @@ body table#QuickSearch.QuickSearch {
 	vertical-align: middle;
 	display: inline-block;
 	font-family: "Futura";
+	color: #fff;
+	transition: all 0.27s ease;
 }
 .header #subHeader .inner .freeShippingContainer .freeShippingTruck {
 	background-image: url('//cdn3.bigcommerce.com/s-mixi7d/templates/__custom/images/freeshippingtruck.png?t=1429230948');
@@ -458,6 +465,7 @@ body table#QuickSearch.QuickSearch {
 	vertical-align: middle;
 	float: right;
 	margin: 0px 4px;
+	transition: all 0.27s ease;
 }
 .header #subHeader .inner .freeShippingContainer .shippingLines:before {
 	content: "";
@@ -490,6 +498,7 @@ body table#QuickSearch.QuickSearch {
 	position: relative;
 	top: -3px;
 	left: 10px;
+	transition: all 0.27s ease;
 }
 .header #subHeader .inner .freeShippingContainer .shippingLines span:before {
 	content: "";
@@ -515,6 +524,26 @@ body table#QuickSearch.QuickSearch {
 	top: 3px;
 	left: -8px;
 }
+.header #subHeader .inner .freeShippingContainer:hover .freeShippingText {
+	color: #6ADA78;
+}
+/*
+.header #subHeader .inner .freeShippingContainer:hover .shippingLines:before {
+	top: 23px;
+}
+.header #subHeader .inner .freeShippingContainer:hover .shippingLines span {
+	top: -8px;
+}
+.header #subHeader .inner .freeShippingContainer:hover .shippingLines span:before {
+	top: 3px;
+}
+.header #subHeader .inner .freeShippingContainer:hover .shippingLines span:after {
+	top: 4px;
+}
+.header #subHeader .inner .freeShippingContainer:hover .shippingLines:after {
+	top: -24px;
+}
+*/
 
 
 
