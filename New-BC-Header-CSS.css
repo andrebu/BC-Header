@@ -254,6 +254,9 @@ body#home {
 .header #Header .search-mobile #SearchForm .Button {
 	float: left;
 }
+body table#QuickSearch.QuickSearch {
+	left: 33% !important;
+}
 .header #Header .inner #myAccountTrigger {
 	display: block;
 	font-size: 13px;
