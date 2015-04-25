@@ -13,7 +13,7 @@
                 <div class="Left fleft">
                     <div class="header-logo"> %%GLOBAL_HeaderLogo%% </div>
                     <div class="header-logo-text">
-                        <a href="http://andredevelopment.mybigcommerce.com/">
+                        <a href="/">
                             <span>DANKSTOP.COM <br>
                                 THE <span class="green">ONLINE</span> HEADSHOP!</span>
                         </a>
@@ -36,7 +36,6 @@
                                 <li><a href="/account.php?action=order_status">My Order Status</a></li>
                                 <li><a href="/account.php?action=view_orders">My Completed Orders</a></li>
                                 <li><a href="/wishlist.php">My Wishlist</a></li>
-                                <!-- <li><a href="/my-reviews/">My Reviews</a></li> -->
                             </ul>
                         </div>
                     </div>
@@ -56,25 +55,79 @@
         <div class="header-logo-mobile"> %%GLOBAL_HeaderLogo%% </div>
         <div id="subHeader">
             <div class="inner">
-                <!-- <div class="shopByContainer">
-                    <a class="shopByText" href="/"><i class="fa fa-home"></i> HOME</a>
-                </div> -->
                 <div class="PageMenu">
                     <ul>
                         <li><a class="shopByText" href="/"><i class="fa fa-home"></i> HOME</a></li>
                         <li id="headerNewItemsLink"><a href="/new-items/">New Items</a></li>
                         <li><a href="/brands/">Shop Brands</a></li>
-                        <li id="headerPipesUnder100Link"><a href="/pipes-under-100/">Pipes Under $100</a></li>
                         <li><a href="/on-sale-now/">On Sale Now</a></li>
-                        <li id="headerFeeStuffLink"><a href="/free-stuff/">FREE STUFF</a></li>
                         <li><a href="/wholesale/">Wholesale</a></li>
                         <li id="headerShippingReturnsLink"><a href="/shipping-returns/">Shipping &amp; Returns</a></li>
                         <li><a href="/blog/">Blog</a></li>
                     </ul>
                 </div>
-                <div class="freeShippingContainer lightgreen"><span class="freeShippingTruck"></span><span class="shippingLines"><span></span></span><span class="freeShippingText"><!--<span class="freeShippingTruck"></span><i class="fa fa-truck"></i>--> FREE Shipping in the USA</span></div>
+                <div class="freeShippingContainer lightgreen"><a href="/shipping-returns/"><span class="freeShippingTruck"></span><span class="shippingLines"><span></span></span><span class="freeShippingText"> FREE Shipping in the USA</span></a></div>
             </div>
         </div>
     </div>
 </div>
+<script type="text/javascript">
+//<![CDATA[
+    // Login and Logout features
+    function addAccountName() {        
+        var $loginGreetingSalutation = $('#loginGreetingSalutation');
+        var $accountMenuTriggerLink = $('#myAccountTriggerLink');
+        var $accountMenuTriggerText = $('#myAccountLoginLogout');
+        var globalFirstName="%%GLOBAL_CurrentCustomerFirstName%%";
+        if (globalFirstName!="" && globalFirstName!="Guest")
+        {
+            //Customer is Logged On
+            $loginGreetingSalutation.text('Hello, ');
+            $accountMenuTriggerLink.attr('href', '/account.php');
+            $accountMenuTriggerText.text(globalFirstName);
+        } else {
+            //Customer is not Logged On
+            return;
+        };
+    }
+
+    // show the HelmMenu when the Help link is hovered on
+    function showDDMenu() {
+        var $helpMenuTrigger = $('#helpMenuTrigger');
+        var $helpMenuContainer = $('#helpMenu');
+        $('#helpMenuTrigger, #helpMenu').on({
+            mouseenter: function(event) {
+                $helpMenuTrigger.addClass('open');
+                $helpMenuContainer.show();
+            },
+            mouseleave: function(event) {
+                $helpMenuTrigger.removeClass('open');
+                $helpMenuContainer.hide();
+            },
+            click: function(event) {
+            }
+        });
+        var $accountMenuTrigger = $('#myAccountTrigger');
+        var $accountMenuContainer = $('#myAccountDDMenu');
+        $('#myAccountTrigger').on({
+            mouseenter: function(event) {
+                $accountMenuTrigger.addClass('open');
+                $accountMenuContainer.show();
+            },
+            mouseleave: function(event) {
+                $accountMenuTrigger.removeClass('open');
+                $accountMenuContainer.hide();
+            },
+            click: function(event) {
+            }
+        });
+    }
+
+    $(document).ready( function() {
+        addAccountName();    
+        showDDMenu();
+    });
+//]]>
+</script>
+
 ​
