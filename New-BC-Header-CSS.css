@@ -571,6 +571,19 @@ body table#QuickSearch.QuickSearch {
 }
 */
 
+/*
+.mobileBrand {
+	display: none;
+	margin-bottom: 30px;
+}
+.mobileBrand .mobileBrandLogo a img {
+	margin: 0 auto;
+	display: block;
+}
+.mobileBrand .mobileBrandText {
+	text-align: center;
+}
+*/
 
 
 
@@ -594,8 +607,14 @@ body table#QuickSearch.QuickSearch {
 	#subHeader {
 		display:none;
 	}
+/*
 	.header-logo-mobile {
 		display: none !important;
+	}
+*/
+/* 	Front page */
+	#home .MagicScroll-horizontal .mcs-item {
+		width: 49% !important;
 	}
 }
 @media screen and (max-width: 767px) {
@@ -618,8 +637,14 @@ body table#QuickSearch.QuickSearch {
 	#subHeader {
 		display:none;
 	}
+/*
 	.header-logo-mobile {
 		display: none !important;
+	}
+*/
+/* 	Front page */
+	#home .MagicScroll-horizontal .mcs-item {
+		width: 49% !important;
 	}
 }
 @media screen and (max-width: 768px) {
@@ -642,8 +667,14 @@ body table#QuickSearch.QuickSearch {
 	#subHeader {
 		display:none;
 	}
+/*
 	.header-logo-mobile {
 		display: none !important;
+	}
+*/
+/* 	Front page */
+	#home .MagicScroll-horizontal .mcs-item {
+		width: 49% !important;
 	}
 }
 @media screen and (device-aspect-ratio: 2/3) {
@@ -669,9 +700,11 @@ body table#QuickSearch.QuickSearch {
 		display:none;
 	}
 */
+/*
 	.header-logo-mobile {
 		display: none !important;
 	}
+*/
 }
 
 @media screen and (device-aspect-ratio: 40/71) {
@@ -693,9 +726,11 @@ body table#QuickSearch.QuickSearch {
 	#subHeader {
 		display:none;
 	}
+/*
 	.header-logo-mobile {
 		display: none !important;
 	}
+*/
 }
 
 @media screen and (device-aspect-ratio: 667/375) {
@@ -717,9 +752,11 @@ body table#QuickSearch.QuickSearch {
 	#subHeader {
 		display:none;
 	}
+/*
 	.header-logo-mobile {
 		display: none !important;
 	}
+*/
 }
 
 @media screen and (device-aspect-ratio: 16/9) {
@@ -745,9 +782,11 @@ body table#QuickSearch.QuickSearch {
 		display:none;
 	}
 */
+/*
 	.header-logo-mobile {
 		display: none !important;
 	}
+*/
 }
 
 @media screen and (device-aspect-ratio: 3/4) {
@@ -773,9 +812,11 @@ body table#QuickSearch.QuickSearch {
 		display:none;
 	}
 */
+/*
 	.header-logo-mobile {
 		display: none !important;
 	}
+*/
 }
 @media only screen and (device-width : 800px) and (orientation: portrait) {
 	.header #Header .inner #myAccountTrigger {
