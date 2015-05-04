@@ -330,6 +330,7 @@ body table#QuickSearch.QuickSearch {
 }
 .header #Header .inner #myAccountDDMenu ul {
 	margin:0;
+	padding: 10px 0;
 }
 .header #Header .inner #myAccountDDMenu ul li {
 	display: block;
@@ -338,17 +339,25 @@ body table#QuickSearch.QuickSearch {
 	line-height: 27px;
 	width: 200px;
 }
+/*
 .header #Header .inner #myAccountDDMenu ul li:first-child a {
 	padding-top:10px;
 }
 .header #Header .inner #myAccountDDMenu ul li:last-child a {
 	padding-bottom:10px;
 }
+*/
 .header #Header .inner #myAccountDDMenu ul li a {
-	width: 100%;
+	width: 95%;
 	display: block;
-	padding: 0 20px;
+	padding: 0 20px 0 14px;
+	margin: 3px 0 3px 6px;
 	box-sizing: border-box;
+	border-left: 4px solid #eee;
+}
+.header #Header .inner #myAccountDDMenu ul li a:hover {
+	border-left-color: #39B54A;
+	background: #F3F4F4;
 }
 .header #Header .inner .header-secondary {
 	top: 0;
