@@ -178,6 +178,10 @@ body#home {
 }
 .header .TopMenu .inner #newTopMenu #helpMenu li .phoneNumber {
 	vertical-align: middle;
+	font-size: 15px;
+}
+.header .TopMenu .inner #newTopMenu #helpMenu li .helpMenuEmailLink {
+	font-size: 15px;
 }
 .header .TopMenu .inner #newTopMenu #helpMenu li .btn {
 	height:auto;
