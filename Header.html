@@ -74,7 +74,7 @@
 <script type="text/javascript">
 //<![CDATA[
     // Login and Logout features
-    function addAccountName() {        
+    function loginFeatures() {        
         var $loginGreetingSalutation = $('#loginGreetingSalutation');
         var $accountMenuTriggerLink = $('#myAccountTriggerLink');
         var $accountMenuTriggerText = $('#myAccountLoginLogout');
@@ -83,7 +83,7 @@
         {
             //Customer is Logged On
             $loginGreetingSalutation.text('Hello, ');
-            $accountMenuTriggerLink.attr('href', '/account.php');
+            $accountMenuTriggerText.attr('href', '/account.php');
             $accountMenuTriggerText.text(globalFirstName);
         } else {
             //Customer is not Logged On
@@ -124,7 +124,7 @@
     }
 
     $(document).ready( function() {
-        addAccountName();    
+        loginFeatures();    
         showDDMenu();
     });
 //]]>
