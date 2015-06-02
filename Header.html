@@ -2,7 +2,8 @@
     <div class="inner">
         <div id="AjaxLoading">
             <div class="ajax-loader"> 
-                <img src="%%GLOBAL_IMG_PATH%%/loader.png" alt="" />&nbsp;%%LNG_LoadingPleaseWait%% 
+                <!--<img src="%%GLOBAL_IMG_PATH%%/loader.png" alt="" />-->
+                <i class="fa fa-spinner fa-pulse fa-2x fa-fw"></i>&nbsp;&nbsp;%%LNG_LoadingPleaseWait%% 
             </div>
         </div>
         %%GLOBAL_MaintenanceNotice%%
@@ -52,7 +53,20 @@
                 </div>
             </div>
         </div>
-        <div class="header-logo-mobile"> %%GLOBAL_HeaderLogo%% </div>
+        <div class="header-logo-mobile"> 
+            <!--GLOBAL_HeaderLogo%%-->
+            <div class="mobile-logo"> 
+                <a href="//dankstop.com/">
+                    <img src="//cdn6.bigcommerce.com/s-ss4br/product_images/sitelogo1_1412246202__88788.png" id="LogoImage" alt="DankStop Online Headshop" width="210" height="210">
+                </a>
+            </div>
+            <div class="mobile-logo-text">
+                <a href="/">
+                    <span>DANKSTOP.COM <br>
+                        THE <span class="green">ONLINE</span> HEADSHOP!</span>
+                </a>
+            </div>
+       </div>
         <div id="subHeader">
             <div class="inner">
                 <div class="PageMenu">
@@ -61,7 +75,7 @@
                         <li id="headerNewItemsLink"><a href="/new-items/">New Items</a></li>
                         <li><a href="/brands/">Shop Brands</a></li>
                         <li><a href="/on-sale-now/">On Sale Now</a></li>
-                        <li><a href="/wholesale/">Wholesale</a></li>
+                        <li class="wholesaleSHLink"><a href="/wholesale/">Wholesale</a></li>
                         <li id="headerShippingReturnsLink"><a href="/shipping-returns/">Shipping &amp; Returns</a></li>
                         <li><a href="/blog/">Blog</a></li>
                     </ul>
