@@ -85,6 +85,7 @@
         </div>
     </div>
 </div>
+<div id="nav-cover"></div>
 <script type="text/javascript">
 //<![CDATA[
     // Login and Logout features
@@ -109,16 +110,17 @@
     function showDDMenu() {
         var $helpMenuTrigger = $('#helpMenuTrigger');
         var $helpMenuContainer = $('#helpMenu');
-        $('#helpMenuTrigger, #helpMenu').on({
+        var $navCover = $('#nav-cover');
+        $('#helpMenuTrigger').on({
             mouseenter: function(event) {
                 $helpMenuTrigger.addClass('open');
                 $helpMenuContainer.show();
+                $navCover.stop().fadeTo(150, 0.5);
             },
             mouseleave: function(event) {
                 $helpMenuTrigger.removeClass('open');
                 $helpMenuContainer.hide();
-            },
-            click: function(event) {
+                $navCover.stop().fadeTo(150, 0, function() {$(this).hide();});
             }
         });
         var $accountMenuTrigger = $('#myAccountTrigger');
@@ -127,12 +129,12 @@
             mouseenter: function(event) {
                 $accountMenuTrigger.addClass('open');
                 $accountMenuContainer.show();
+                $navCover.stop().fadeTo(150, 0.5);
             },
             mouseleave: function(event) {
                 $accountMenuTrigger.removeClass('open');
                 $accountMenuContainer.hide();
-            },
-            click: function(event) {
+                $navCover.stop().fadeTo(150, 0, function() {$(this).hide();});
             }
         });
     }
@@ -144,4 +146,3 @@
 //]]>
 </script>
 
-​
