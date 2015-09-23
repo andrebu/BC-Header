@@ -111,6 +111,15 @@
         var $helpMenuTrigger = $('#helpMenuTrigger');
         var $helpMenuContainer = $('#helpMenu');
         var $navCover = $('#nav-cover');
+        var $header = $('.header');
+        function setNavCover() {
+	        var headerHeight = $header.height();
+	        $navCover.css('top', headerHeight);
+        }
+        setNavCover();
+		$(window).on('resize', function(){
+	        setNavCover();
+		});
         $('#helpMenuTrigger').on({
             mouseenter: function(event) {
                 $helpMenuTrigger.addClass('open');
@@ -146,3 +155,5 @@
 //]]>
 </script>
 
+
+%%Panel.sloyalty_statusbar%%
