@@ -1,4 +1,4 @@
-<div class="header">
+<div class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
     <div class="inner">
         <div id="AjaxLoading">
             <div class="ajax-loader"> 
@@ -14,8 +14,8 @@
                     <div class="header-logo"> %%GLOBAL_HeaderLogo%% </div>
                     <div class="header-logo-text">
                         <a href="/">
-                            <span>DANKSTOP.COM <br>
-                                THE <span class="green">ONLINE</span> HEADSHOP!</span>
+                            <span itemprop="headline">DANKSTOP.COM</span><br>
+                            <span itemprop="description">THE <span class="green">ONLINE</span> HEADSHOP!</span>
                         </a>
                     </div>
                 </div>
@@ -28,14 +28,38 @@
                             <br>
                             <span class="myAccountMyDS">My DankStop <i class="fa fa-caret-down"></i></span>
                         </span>
-                        <div id="myAccountDDMenu">
+                        <div id="myAccountDDMenu" itemscope itemtype="http://schema.org/SiteNavigationElement">
                             <ul>
-                                <li><a href="/account.php">My DankStop</a></li>
-                                <li><a href="/account.php?action=account_details">My Account</a></li>
-                                <li><a href="/account.php?action=inbox">My Messages</a></li>
-                                <li><a href="/account.php?action=order_status">My Order Status</a></li>
-                                <li><a href="/account.php?action=view_orders">My Completed Orders</a></li>
-                                <li><a href="/wishlist.php">My Wishlist</a></li>
+                                <li>
+                                    <a href="/account.php" itemprop="url">
+                                        <span itemprop="name">My DankStop</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/account.php?action=account_details" itemprop="url">
+                                        <span itemprop="name">My Account</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/account.php?action=inbox" itemprop="url">
+                                        <span itemprop="name">My Messages</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/account.php?action=order_status" itemprop="url">
+                                        <span itemprop="name">My Order Status</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/account.php?action=view_orders" itemprop="url">
+                                        <span itemprop="name">My Completed Orders</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/wishlist.php" itemprop="url">
+                                        <span itemprop="name">My Wishlist</span>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -68,15 +92,43 @@
        </div>
         <div id="subHeader">
             <div class="inner">
-                <div class="PageMenu">
+                <div class="PageMenu" itemscope itemtype="http://schema.org/SiteNavigationElement">
                     <ul>
-                        <li><a class="shopByText" href="/"><i class="fa fa-home"></i> HOME</a></li>
-                        <li id="headerNewItemsLink"><a href="/categories/?sort=newest">New Items</a></li>
-                        <li><a href="/brands/">Shop Brands</a></li>
-                        <li><a href="/on-sale-now/">On Sale Now</a></li>
-                        <li class="wholesaleSHLink"><a href="/wholesale/">Wholesale</a></li>
-                        <li id="headerShippingReturnsLink"><a href="/shipping-returns/">Shipping &amp; Returns</a></li>
-                        <li><a href="/blog/">Blog</a></li>
+                        <li>
+                            <a class="shopByText" href="/" itemprop="url">
+                                <span itemprop="name"><i class="fa fa-home"></i> HOME</span>
+                            </a>
+                        </li>
+                        <li id="headerNewItemsLink">
+                            <a href="/categories/?sort=newest" itemprop="url">
+                                <span itemprop="name">New Items</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/brands/" itemprop="url">
+                                <span itemprop="name">Shop Brands</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/on-sale-now/" itemprop="url">
+                                <span itemprop="name">On Sale Now</span>
+                            </a>
+                        </li>
+                        <li class="wholesaleSHLink">
+                            <a href="/wholesale/" itemprop="url">
+                                <span itemprop="name">Wholesale</span>
+                            </a>
+                        </li>
+                        <li id="headerShippingReturnsLink">
+                            <a href="/shipping-returns/" itemprop="url">
+                                <span itemprop="name">Shipping &amp; Returns</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/blog/" itemprop="url">
+                                <span itemprop="name">Blog</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="freeShippingContainer lightgreen"><a href="/shipping-returns/"><span class="freeShippingTruck"></span><span class="shippingLines"><span></span></span><span class="freeShippingText"> FREE Shipping in the USA</span></a></div>
