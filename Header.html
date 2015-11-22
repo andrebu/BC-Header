@@ -2,7 +2,6 @@
     <div class="inner">
         <div id="AjaxLoading">
             <div class="ajax-loader"> 
-                <!--<img src="%%GLOBAL_IMG_PATH%%/loader.png" alt="" />-->
                 <i class="fa fa-spinner fa-pulse fa-2x fa-fw"></i>&nbsp;&nbsp;%%LNG_LoadingPleaseWait%% 
             </div>
         </div>
@@ -57,7 +56,7 @@
             <!--GLOBAL_HeaderLogo%%-->
             <div class="mobile-logo"> 
                 <a href="//dankstop.com/">
-                    <img src="//cdn6.bigcommerce.com/s-ss4br/product_images/sitelogo1_1412246202__88788.png" id="LogoImage" alt="DankStop Online Headshop" width="210" height="210">
+                    <img src="%%ASSET_images/DankStop-Online-Headshop-logo.png%%" id="LogoImage" alt="DankStop Online Headshop Logo" title="DankStop Online Headshop" width="70" height="70">
                 </a>
             </div>
             <div class="mobile-logo-text">
@@ -86,74 +85,4 @@
     </div>
 </div>
 <div id="nav-cover"></div>
-<script type="text/javascript">
-//<![CDATA[
-    // Login and Logout features
-    function loginFeatures() {        
-        var $loginGreetingSalutation = $('#loginGreetingSalutation');
-        var $accountMenuTriggerLink = $('#myAccountTriggerLink');
-        var $accountMenuTriggerText = $('#myAccountLoginLogout');
-        var globalFirstName="%%GLOBAL_CurrentCustomerFirstName%%";
-        if (globalFirstName!="" && globalFirstName!="Guest")
-        {
-            //Customer is Logged On
-            $loginGreetingSalutation.text('Hello, ');
-            $accountMenuTriggerText.attr('href', '/account.php');
-            $accountMenuTriggerText.text(globalFirstName);
-        } else {
-            //Customer is not Logged On
-            return;
-        };
-    }
-
-    // show the HelmMenu when the Help link is hovered on
-    function showDDMenu() {
-        var $helpMenuTrigger = $('#helpMenuTrigger');
-        var $helpMenuContainer = $('#helpMenu');
-        var $navCover = $('#nav-cover');
-        var $header = $('.header');
-        function setNavCover() {
-	        var headerHeight = $header.height();
-	        $navCover.css('top', headerHeight);
-        }
-        setNavCover();
-		$(window).on('resize', function(){
-	        setNavCover();
-		});
-        $('#helpMenuTrigger').on({
-            mouseenter: function(event) {
-                $helpMenuTrigger.addClass('open');
-                $helpMenuContainer.show();
-                $navCover.stop().fadeTo(150, 0.5);
-            },
-            mouseleave: function(event) {
-                $helpMenuTrigger.removeClass('open');
-                $helpMenuContainer.hide();
-                $navCover.stop().fadeTo(150, 0, function() {$(this).hide();});
-            }
-        });
-        var $accountMenuTrigger = $('#myAccountTrigger');
-        var $accountMenuContainer = $('#myAccountDDMenu');
-        $('#myAccountTrigger').on({
-            mouseenter: function(event) {
-                $accountMenuTrigger.addClass('open');
-                $accountMenuContainer.show();
-                $navCover.stop().fadeTo(150, 0.5);
-            },
-            mouseleave: function(event) {
-                $accountMenuTrigger.removeClass('open');
-                $accountMenuContainer.hide();
-                $navCover.stop().fadeTo(150, 0, function() {$(this).hide();});
-            }
-        });
-    }
-
-    $(document).ready( function() {
-        loginFeatures();    
-        showDDMenu();
-    });
-//]]>
-</script>
-
-
-%%Panel.sloyalty_statusbar%%
+​
