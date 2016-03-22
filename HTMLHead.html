@@ -1,6 +1,6 @@
 %%Panel.DOCTYPE%%
 
-<html>
+<html lang=”en-us”>
 
 <head>
 
@@ -17,7 +17,11 @@
     <link href='//fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
+    <link rel="alternate" href="%%GLOBAL_ShopPath%%/%%GLOBAL_URL%%" hreflang="x-default" />
+    <link rel="alternate" href="%%GLOBAL_ShopPath%%/%%GLOBAL_URL%%" hreflang="en" />
+    <link rel="alternate" href="%%GLOBAL_ShopPath%%/%%GLOBAL_URL%%" hreflang="en-us" />
+    <meta http-equiv="content-language" content="en-us">
+    
     <link rel="shortcut icon" href="%%GLOBAL_Favicon%%" />
     <link rel="apple-touch-icon" sizes="57x57" href="%%ASSET_images/favicons/apple-touch-icon-57x57.png%%">
     <link rel="apple-touch-icon" sizes="60x60" href="%%ASSET_images/favicons/apple-touch-icon-60x60.png%%">
@@ -146,14 +150,14 @@
            if(oldonload){oldonload()}};
         }());
     </script>
-    <!--End Adroll PIxel-->
+
     
-    <!-- Google Webmaster Verification meta tag -->
-    <!-- dankstop.com -->
+    <!-- Webmaster Verification meta tags -->
     <meta name="google-site-verification" content="BWZqQmR4-nsoRJe2Nb8gNRSDKYOcUQEuG-_RgSXHFQo" />
     <meta name="google-site-verification" content="ocKowI2cC67C0QDR1HBuBmo6pUleIC35vIPrIadOeuc" />
-    <!-- End of Google Webmaster Verification meta tag -->
-        
+    <meta name="msvalidate.01" content="4CC6513BFBB0E5CBAA8777E0C23FD592" />
+
+    
     <!--Start of Zopim Live Chat Script-->
     <script type="text/javascript">
         window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
@@ -162,7 +166,7 @@
         $.src='//v2.zopim.com/?2T4w06SgFmNJg25xZfAyv8iG5FcGf9qU';z.t=+new Date;$.
         type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
     </script> 
-    <!--End of Zopim Live Chat Script-->
+
     
     <!-- Facebook Conversion Code for Checkouts -->
     <script>
@@ -192,29 +196,43 @@
     {
         "@context": "http://schema.org",
         "@type": "Organization",
-        "url": "http://dankstop.com",
+        "url": "https://dankstop.com",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://dankstop.com/about-us/"
+        },
         "name" : "DankStop",
-        "alternateName" : "DankStop Glass",
+        "alternateName" : "DankStop Online Headshop",
         "description": "Our dab rig selection is HUGE. We stock a variety of glass concentrate pipes, vapor rigs, and oil rigs by only the best brands in the industry.",
         "brand" : "DankStop",
-        "logo": "http://cdn6.bigcommerce.com/s-ss4br/product_images/sitelogo1_1412246202__88788.png",
+        "logo": "http://cdn6.bigcommerce.com/s-ss4br/templates/__custom/images/DankStop-Online-Headshop-logo.png",
         "sameAs": [
             "http://facebook.com/dankstop",
             "http://twitter.com/dankstop",
             "http://plus.google.com/+Dankstopheadshop/",
             "http://instagram.com/dankstop"
         ],
-        "contactPoint": {
-            "@type": "contactPoint",
+        "contactPoint": [
+            {
+            "@type": "ContactPoint",
             "email": "support@dankstop.com",
             "telephone": "+1-844-326-5786",
             "contactType": "customer service",
-            "contactOption" : "TollFree"
-        },
+            "contactOption" : "TollFree",
+            "availableLanguage" : ["English"]
+            }, {
+            "@type": "ContactPoint",
+            "email": "wholesale@dankstop.com",
+            "telephone": "+1-844-326-5786",
+            "contactType": "sales",
+            "contactOption" : "TollFree",
+            "availableLanguage" : ["English","Russian"]
+            }
+        ],
         "potentialAction": {
             "@type": "SearchAction",
-            "target": "http://dankstop.com/search.php?Search=&search_query={search_term_string}",
-            "query-input": "required name=search_term_string"
+            "target": "http://dankstop.com/search.php?Search=&search_query={search_query}",
+            "query-input": "required name=search_query"
         }
     }
     </script>  
@@ -226,4 +244,3 @@
     <!--END of YotPo Review tab script-->
     
 </head>
-​
